@@ -1,0 +1,268 @@
+
+{
+  "nav": {
+    "home": { "hy": "Գլխավոր", "en": "Home", "ru": "Главная" },
+    "about": { "hy": "Մեր Մասին", "en": "About", "ru": "О Нас" },
+    "solutions": { "hy": "Լուծումներ", "en": "Solutions", "ru": "Решения" },
+    "partnership": { "hy": "Մատակարարներ", "en": "Partnership", "ru": "Вендоры" },
+    "customers": { "hy": "Գործընկերներ", "en": "Customers", "ru": "Партнеры" },
+    "contact": { "hy": "Կապ", "en": "Contact", "ru": "Контакты" }
+  },
+
+"hero": {
+    "badge": {
+      "hy": "Ձեռնարկատիրական IT ենթակառուցվածքային լուծումներ",
+      "en": "Enterprise IT Infrastructure Solutions",
+      "ru": "Корпоративные IT решения инфраструктуры"
+    },
+    "title": {
+      "hy": "Վաղվա թվային հիմքի կառուցում",
+      "en": "Building the Digital Foundation of Tomorrow",
+      "ru": "Строим цифровой фундамент завтрашнего дня"
+    },
+    "description": {
+      "hy": "DigiBase-ը մատուցում է ժամանակակից տվյալների կենտրոնների ենթակառուցվածք, ամպային լուծումներ և ձեռնարկատիրական անվտանգության համակարգեր, որոնք ապահովում են Հայաստանի թվային տրանսֆորմացիան։",
+      "en": "DigiBase delivers cutting-edge data center infrastructure, cloud solutions, and enterprise security systems that power Armenia's digital transformation.",
+      "ru": "DigiBase предоставляет передовую инфраструктуру дата-центров, облачные решения и системы корпоративной безопасности, которые обеспечивают цифровую трансформацию Армении."
+    },
+    "ctaPrimary": {
+      "hy": "Կապ հաստատել",
+      "en": "Get in Touch",
+      "ru": "Связаться с нами"
+    },
+    "ctaSecondary": {
+      "hy": "Դիտել լուծումները",
+      "en": "View Solutions",
+      "ru": "Посмотреть решения"
+    },
+    "scroll": {
+      "hy": "Ուղևորվեք ներքև",
+      "en": "Scroll to explore",
+      "ru": "Прокрутите, чтобы изучить"
+    }
+  },
+
+  "common": {
+    "getInTouch": {
+      "hy": "Կապ հաստատել",
+      "en": "Get in Touch",
+      "ru": "Связаться с нами"
+    }
+  },
+
+  "languages": {
+    "hy": "Հայ",
+    "en": "EN",
+    "ru": "RU"
+  }
+,
+  "clientsExperience": {
+    "clients": { "hy": "Հաճախորդներ", "en": "Clients", "ru": "Клиенты" },
+    "trustedOrganizations": {
+      "hy": "Վստահված կազմակերպություններ",
+      "en": "Trusted organizations",
+      "ru": "Доверенные организации"
+    },
+    "description": {
+      "hy": "Կազմակերպություններ, որոնք ապավինում են DigiBase-ի ենթակառուցվածքային փորձաքննությանը։",
+      "en": "Organizations relying on DIGIBASE infrastructure expertise.",
+      "ru": "Организации, полагающиеся на экспертизу DIGIBASE в инфраструктуре."
+    },
+    "currentlyViewing": {
+      "hy": "Ներկայումս դիտվում է",
+      "en": "Currently viewing",
+      "ru": "Сейчас просматривается"
+    }
+  },
+
+  "partnersExperience": {
+    "strategicPartners": {
+      "hy": "Ռազմավարական գործընկերներ",
+      "en": "Strategic partners",
+      "ru": "Стратегические партнеры"
+    },
+    "technologyAlliances": {
+      "hy": "Տեխնոլոգիական դաշինքներ",
+      "en": "Technology alliances",
+      "ru": "Технологические альянсы"
+    },
+    "description": {
+      "hy": "Աշխարհահռչակ վաճառողներ, որոնք աջակցում են ձեռնարկատիրական ենթակառուցվածքին, ամպային տեխնոլոգիաներին, անվտանգությանը և տվյալների կենտրոններին։",
+      "en": "Global vendors supporting enterprise infrastructure, cloud, security and data center solutions.",
+      "ru": "Глобальные вендоры, поддерживающие корпоративную инфраструктуру, облачные решения, безопасность и дата-центры."
+    },
+    "currentlyViewing": {
+      "hy": "Ներկայումս դիտվում է",
+      "en": "Currently viewing",
+      "ru": "Сейчас просматривается"
+    }
+  },
+
+  "about": {
+    "aboutUs": { "hy": "Մեր մասին", "en": "About Us", "ru": "О нас" },
+    "heroTitle": {
+      "hy": "Տեխնոլոգիաներ, որոնք խթանում են բիզնեսի աճը",
+      "en": "Technologies that Drive Business Growth",
+      "ru": "Технологии, которые стимулируют рост бизнеса"
+    },
+    "heroSubtitle1": {
+      "hy": "Մենք հավատում ենք, որ տեխնոլոգիայի իսկական արժեքը կազմակերպությունները ավելի խելացի, անվտանգ և արդյունավետ դարձնելն է։",
+      "en": "We believe that the true value of technology lies in making organizations smarter, safer, and more efficient.",
+      "ru": "Мы верим, что истинная ценность технологий заключается в том, чтобы сделать организации умнее, безопаснее и эффективнее."
+    },
+    "heroSubtitle2": {
+      "hy": "Մենք մասնագիտացած ենք տվյալների կենտրոնների, կիբերանվտանգության, ցանցերի և առաջադեմ անվտանգության համակարգերի նախագծման և իրականացման մեջ։",
+      "en": "We specialize in designing and implementing data centers, cybersecurity infrastructure, networking, and advanced security systems.",
+      "ru": "Мы специализируемся на проектировании и внедрении дата-центров, инфраструктуры кибербезопасности, сетей и передовых систем безопасности."
+    },
+    "philosophyTitle": {
+      "hy": "Մենք պարզապես սարքավորում չենք մատակարարում։",
+      "en": "We don't just supply hardware.",
+      "ru": "Мы не просто поставляем оборудование."
+    },
+    "philosophyText1": {
+      "hy": "Մեր փիլիսոփայությունը պարզ է՝ մենք կառուցում ենք համապարփակ տեխնոլոգիական էկոհամակարգեր, որոնք նպաստում են բիզնեսի աճին և ապահովում են գործառնական շարունակականություն։",
+      "en": "Our operating philosophy is straightforward: our goal is to build comprehensive technological ecosystems that foster business growth and ensure operational continuity.",
+      "ru": "Наша операционная философия проста: мы строим комплексные технологические экосистемы, способствующие росту бизнеса и обеспечивающие операционную непрерывность."
+    },
+    "journeyTitle": {
+      "hy": "Աշխարհահռչակ տեխնոլոգիաներ բերելով Հայաստան",
+      "en": "Bringing world-class technology to Armenia",
+      "ru": "Принося технологии мирового класса в Армению"
+    },
+    "journeyText1": {
+      "hy": "DigiBase-ը հիմնադրվել է հստակ տեսլականով՝ Հայաստան բերել աշխարհահռչակ տեխնոլոգիական լուծումներ։",
+      "en": "DigiBase was founded with a clear vision: to bring world-class technological solutions to the Armenian market.",
+      "ru": "DigiBase была основана с четким видением: принести технологии мирового класса на армянский рынок."
+    },
+    "teamTitle": {
+      "hy": "Թիմը մեր հաջողության հետևում",
+      "en": "The team behind our success",
+      "ru": "Команда, стоящая за нашим успехом"
+    },
+    "teamText1": {
+      "hy": "Յուրաքանչյուր հաջող նախագիծ սկսվում է նվիրված թիմից։",
+      "en": "Every successful project begins with a dedicated team.",
+      "ru": "Каждый успешный проект начинается с преданной команды."
+    },
+    "teamText2": {
+      "hy": "DigiBase-ում մենք ոչ միայն իրականացնում ենք տեխնոլոգիա, այլև կառուցում ենք վստահելի հարաբերություններ։",
+      "en": "At DigiBase, we don't just implement technology—we build trusted relationships.",
+      "ru": "В DigiBase мы не просто внедряем технологии — мы строим доверительные отношения."
+    }
+  },
+
+  "contact": {
+    "contact": { "hy": "Կապ", "en": "Contact", "ru": "Контакты" },
+    "buildSomethingPowerful": {
+      "hy": "Եկեք կառուցենք ինչ-որ հզոր բան։",
+      "en": "Let's build something powerful.",
+      "ru": "Давайте построим что-то мощное."
+    },
+    "reachOurEngineers": {
+      "hy": "Կապվեք մեր ինժեներների հետ ուղղակիորեն։",
+      "en": "Reach our engineers directly.",
+      "ru": "Свяжитесь с нашими инженерами напрямую."
+    },
+    "office": { "hy": "Գրասենյակ", "en": "Office", "ru": "Офис" },
+    "email": { "hy": "Էլեկտրոնային փոստ", "en": "Email", "ru": "Электронная почта" },
+    "phone": { "hy": "Հեռախոս", "en": "Phone", "ru": "Телефон" },
+    "company": { "hy": "Ընկերություն", "en": "Company", "ru": "Компания" },
+    "dropUsAMessage": {
+      "hy": "Գրեք մեզ",
+      "en": "Drop Us a Message",
+      "ru": "Напишите нам"
+    },
+    "fullName": { "hy": "Անուն Ազգանուն", "en": "Full Name", "ru": "ФИО" },
+    "companyField": { "hy": "Ընկերություն", "en": "Company", "ru": "Компания" },
+    "emailAddress": { "hy": "Էլեկտրոնային հասցե", "en": "Email Address", "ru": "Электронный адрес" },
+    "phoneNumber": { "hy": "Հեռախոսահամար", "en": "Phone Number", "ru": "Номер телефона" },
+    "subject": { "hy": "Թեմա", "en": "Subject", "ru": "Тема" },
+    "yourMessage": { "hy": "Ձեր հաղորդագրությունը", "en": "Your Message", "ru": "Ваше сообщение" },
+    "sendMessage": { "hy": "Ուղարկել հաղորդագրություն", "en": "Send Message", "ru": "Отправить сообщение" }
+  },
+
+  "partnersPage": {
+    "partnersClients": { "hy": "Գործընկերներ և Հաճախորդներ", "en": "Partners & Clients", "ru": "Партнеры и Клиенты" },
+    "ecosystem": { "hy": "Էկոհամակարգ", "en": "ecosystem", "ru": "экосистема" },
+    "behindEveryDeployment": {
+      "hy": "Էկոհամակարգը յուրաքանչյուր նախագծի հետևում։",
+      "en": "The ecosystem behind every deployment.",
+      "ru": "Экосистема за каждым развертыванием."
+    }
+  },
+  "partners": {
+    "eyebrow": {
+      "hy": "Հաճախորդներ",
+      "en": "Customers",
+      "ru": "Клиенты"
+    },
+    "title": {
+      "hy": "Համագործակցություններ հիմնված վստահության վրա",
+      "en": "Partnerships Built on Trust",
+      "ru": "Партнерства, построенные на доверии"
+    },
+    "trust": {
+      "hy": "վստահության",
+      "en": "Trust",
+      "ru": "Доверии"
+    },
+    "description1": {
+      "hy": "DigiBase-ը ապահովում է Հայաստանի առաջատար ընկերությունների և պետական հաստատությունների տեխնոլոգիական հուսալիությունը։",
+      "en": "DigiBase ensures the technological reliability of Armenia’s leading companies and government institutions.",
+
+      "ru": "DigiBase обеспечивает технологическую надежность ведущих компаний и государственных учреждений Армении."
+    },
+    "description2": {
+      "hy": "Մեր հաճախորդների թվում են ֆինանսական հաստատություններ, պետական մարմիններ, կրթական կենտրոններ և խոշոր կորպորացիաներ։",
+      "en": "Our clientele includes financial institutions, public sector entities, educational centers, and large corporations.",
+      "ru": "Наша клиентура включает финансовые учреждения, государственные органы, образовательные центры и крупные корпорации."
+    },
+    "description3": {
+      "hy": "Մեր հաճախորդների վստահությունը մեր ամենամեծ ձեռքբերումն է։",
+      "en": "The trust of our customers is our greatest achievement.",
+      "ru": "Доверие наших клиентов — наше главное достижение."
+    },
+    "trustCards": {
+      "enterprise": {
+        "title": { "hy": "Խոշոր ընկերություններ", "en": "Enterprise Clients", "ru": "Корпоративные клиенты" },
+        "text": { "hy": "Բանկերի, կորպորացիաների և կազմակերպությունների համար առաքելության համար կարևոր ենթակառուցվածքային լուծումներ։", "en": "Supporting banks, corporations and organizations with mission-critical infrastructure solutions.", "ru": "Поддержка банков, корпораций и организаций с критически важными инфраструктурными решениями." }
+      },
+      "reliable": {
+        "title": { "hy": "Հուսալի համակարգեր", "en": "Reliable Systems", "ru": "Надежные системы" },
+        "text": { "hy": "Ապահով հարթակների նախագծում, որոնք երաշխավորում են հասանելիություն, պաշտպանություն և գործառնական արդյունավետություն։", "en": "Designing secure platforms that guarantee availability, protection and operational efficiency.", "ru": "Проектирование безопасных платформ, гарантирующих доступность, защиту и операционную эффективность." }
+      },
+      "longTerm": {
+        "title": { "hy": "Երկարաժամկետ համագործակցություն", "en": "Long-Term Partnership", "ru": "Долгосрочное партнерство" },
+        "text": { "hy": "Համատեղ աշխատանք հաճախորդների հետ շարունակական նորարարության և տեխնոլոգիական զարգացման միջոցով։", "en": "Working together with customers through continuous innovation and technology evolution.", "ru": "Совместная работа с клиентами через непрерывные инновации и технологическое развитие." }
+      }
+    },
+    "clientsTitle": {
+      "hy": "Կազմակերպություններ, որոնք ընտրել են DigiBase-ը",
+      "en": "Organizations that chose DigiBase",
+      "ru": "Организации, которые выбрали DigiBase"
+    },
+    "clientsSubtitle": {
+      "hy": "Հուսալի կազմակերպություններ, որոնք ապավինում են DigiBase-ին որպես անվտանգ, մասշտաբային և ապագայի պատրաստ ենթակառուցվածքի գործընկեր։",
+      "en": "Trusted organizations that rely on DigiBase as their technology partner for secure, scalable and future-ready infrastructure.",
+      "ru": "Надежные организации, которые полагаются на DigiBase как на технологического партнера для безопасной, масштабируемой и готовой к будущему инфраструктуры."
+    },
+    "clientsDescription": {
+      "hy": "Trusted organizations that rely on DigiBase as their technology partner.",
+      "en": "Trusted organizations that rely on DigiBase as their technology partner.",
+      "ru": "Надежные организации, которые полагаются на DigiBase."
+    },
+    "ctaTitle": {
+      "hy": "Պատրաստ եք կառուցել ձեր հաջորդ տեխնոլոգիական լուծումը?",
+      "en": "Ready to build your next technology solution?",
+      "ru": "Готовы построить следующее технологическое решение?"
+    },
+    "ctaDescription": {
+      "hy": "Մեր թիմը պատրաստ է օգնել ձեր կազմակերպությանը նախագծել և իրականացնել հուսալի ձեռնարկատիրական ենթակառուցվածք։",
+      "en": "Our team is ready to help your organization design and implement reliable enterprise infrastructure.",
+      "ru": "Наша команда готова помочь вашей организации спроектировать и внедрить надежную корпоративную инфраструктуру."
+    }
+  }
+
+ 
+}

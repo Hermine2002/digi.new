@@ -1,0 +1,1043 @@
+{
+  "nav": {
+    "home": {
+      "hy": "Գլխավոր",
+      "en": "Home",
+      "ru": "Главная"
+    },
+    "about": {
+      "hy": "Մեր Մասին",
+      "en": "About",
+      "ru": "О нас"
+    },
+    "solutions": {
+      "hy": "Լուծումներ",
+      "en": "Solutions",
+      "ru": "Решения"
+    },
+    "partnership": {
+      "hy": "Գործընկերներ",
+      "en": "Customers",
+      "ru": "партнеры"
+    },
+    "customers": {
+      "hy": "հաճախորդներ",
+      "en": "Partnership",
+      "ru": "Клиенты"
+    },
+    "contact": {
+      "hy": "Կապ",
+      "en": "Contact",
+      "ru": "Контакты"
+    },
+    "getInTouch": {
+      "hy": "Կապ հաստատել",
+      "en": "Get in Touch",
+      "ru": "Связаться"
+    }
+  },
+  "hero": {
+   "badge": {
+  "hy": "ՏՏ ենթակառուցվածքների և համակարգային ինտեգրման առաջատար ընկերություն",
+  "en": "Leading company in IT infrastructure and system integration",
+  "ru": "Ведущая компания в области ИТ-инфраструктуры и системной интеграции"
+},
+"badgeSubTilile": {
+  "hy": "ՏՏ գործընկերը",
+  "en": "IT Partner",
+  "ru": "ИТ-партнёр"
+},
+"title": {
+  "hy": "Դիջիբեյս — Ձեր վստահելի ",
+  "en": "DigiBase — Your Trusted ",
+  "ru": "DigiBase — Ваш надёжный "
+},
+"description": {
+  "hy": "DigiBase-ը ապահովում է պետական և կորպորատիվ հատվածների ՏՏ ենթակառուցվածքների հուսալիությունն ու պաշտպանվածությունը։",
+  "en": "DigiBase ensures the reliability and protection of IT infrastructure for government and corporate sectors.",
+  "ru": "DigiBase обеспечивает надежность и защиту ИТ-инфраструктуры государственного и корпоративного секторов."
+},
+    "ctaPrimary": {
+      "hy": "Սկսել համագործակցությունը",
+      "en": "Start Partnership",
+      "ru": "Начать сотрудничество"
+    },
+    "ctaSecondary": {
+      "hy": "",
+      "en": "",
+      "ru": ""
+    },
+    "scroll": {
+      "hy": "Ուղևորվեք ներքև",
+      "en": "Scroll to explore",
+      "ru": "Прокрутите, чтобы изучить"
+    }
+  },
+  "solutionsPreview": {
+    "eyebrow": {
+      "hy": "Մեր Լուծումները",
+      "en": "Our Solutions",
+      "ru": "Наши Решения"
+    },
+    "title": {
+      "hy": "Նախագծեր, որոնք սահմանում են գերազանցություն",
+      "en": "Projects That Define Excellence",
+      "ru": "Проекты, определяющие совершенство"
+    },
+    "viewAll": {
+      "hy": "Դիտել բոլոր լուծումները",
+      "en": "View all solutions",
+      "ru": "Посмотреть все решения"
+    },
+    "projects": {
+      "oracle": {
+        "title": {
+          "hy": "Oracle Ենթակառուցվածք",
+          "en": "Oracle Infrastructure",
+          "ru": "Инфраструктура Oracle"
+        },
+        "description": {
+          "hy": "Կորպորատիվ մակարդակի տվյալների բազայի ենթակառուցվածքի ներդրում բարձր հասանելիության կլաստերավորմամբ և աղետների վերականգնման լուծումներով:",
+          "en": "Enterprise-grade database infrastructure deployment with high-availability clustering and disaster recovery solutions for mission-critical operations.",
+          "ru": "Развертывание инфраструктуры баз данных корпоративного уровня с высокодоступной кластеризацией и решениями для аварийного восстановления."
+        },
+        "tags": {
+          "database": {
+            "hy": "Տվյալների բազա",
+            "en": "Database",
+            "ru": "База данных"
+          },
+          "enterprise": {
+            "hy": "Կորպորատիվ",
+            "en": "Enterprise",
+            "ru": "Корпоративный"
+          }
+        }
+      },
+      "softconstruct": {
+        "title": {
+          "hy": "SoftConstruct Մոդուլային ՏԿ",
+          "en": "SoftConstruct Modular DC",
+          "ru": "Модульный ДЦ SoftConstruct"
+        },
+        "description": {
+          "hy": "Ժամանակակից հավաքովի մոդուլային տվյալների կենտրոն՝ առաջադեմ հովացման, էլեկտրաանուցման բաշխման և խելացի մոնիտորինգի համակարգերով:",
+          "en": "State-of-the-art prefabricated modular data center with advanced cooling, power distribution, and intelligent monitoring systems.",
+          "ru": "Современный сборный модульный дата-центр с передовыми системами охлаждения, распределения питания и интеллектуального мониторинга."
+        },
+        "tags": {
+          "dataCenter": {
+            "hy": "Տվյալների Կենտրոն",
+            "en": "Data Center",
+            "ru": "Дата-центр"
+          },
+          "modular": {
+            "hy": "Մոդուլային",
+            "en": "Modular",
+            "ru": "Модульный"
+          }
+        }
+      },
+      "idbank": {
+        "title": {
+          "hy": "IDBank Active-Active",
+          "en": "IDBank Active-Active",
+          "ru": "IDBank Active-Active"
+        },
+        "description": {
+          "hy": "Ամբողջովին կրկնօրինակված active-active բանկային ենթակառուցվածք, որն ապահովում է 99.999% հասանելիություն իրական ժամանակում տվյալների սինխրոնացմամբ:",
+          "en": "Fully redundant active-active banking infrastructure ensuring 99.999% uptime with real-time data synchronization across multiple sites.",
+          "ru": "Полностью избыточная банковская инфраструктура active-active, обеспечивающая 99,999% времени работы с синхронизацией данных в реальном времени."
+        },
+        "tags": {
+          "banking": {
+            "hy": "Բանկային համակարգ",
+            "en": "Banking",
+            "ru": "Банковское дело"
+          },
+          "highAvailability": {
+            "hy": "Բարձր Հասանելիություն",
+            "en": "High Availability",
+            "ru": "Высокая доступность"
+          }
+        }
+      },
+      "nationalSecurity": {
+        "title": {
+          "hy": "Ազգային Անվտանգության Համակարգեր",
+          "en": "National Security Systems",
+          "ru": "Системы Национальной Безопасности"
+        },
+        "description": {
+          "hy": "Համապարփակ անվտանգության ենթակառուցվածք պետական պաշտպանության համար՝ ներառյալ տեսահսկում, մուտքի վերահսկում և ապահով կապ:",
+          "en": "Comprehensive security infrastructure for national defense including surveillance, access control, and secure communications.",
+          "ru": "Комплексная инфраструктура безопасности для государственной обороны, включая видеонаблюдение, контроль доступа и защищенную связь."
+        },
+        "tags": {
+          "security": {
+            "hy": "Անվտանգություն",
+            "en": "Security",
+            "ru": "Безопасность"
+          },
+          "government": {
+            "hy": "Պետական",
+            "en": "Government",
+            "ru": "Государственный"
+          }
+        }
+      }
+    }
+  },
+"vendorsPreview": {
+  "eyebrow": {
+    "hy": "Գործընկերներ",
+    "en": "Partners",
+    "ru": "Партнёры"
+  },
+  "mainTitle": {
+    "hy": "Մեզ վստահում են",
+    "en": "They Trust Us",
+    "ru": "Нам доверяют"
+  },
+  "minititleTwo": {
+    "hy": "",
+    "en": "",
+    "ru": ""
+  },
+  "mainDescription": {
+    "hy": "Մենք հպարտ ենք համագործակցել տարածաշրջանի առաջատար բանկերի, պետական կառույցների և տեխնոլոգիական հսկաների հետ:",
+    "en": "We are proud to collaborate with the region's leading banks, government institutions, and technology giants.",
+    "ru": "Мы гордимся сотрудничеством с ведущими банками региона, государственными учреждениями и технологическими гигантами."
+  },
+  "features": {
+    "directAccess": {
+      "title": {
+        "hy": "Ուղղակի հասանելիություն",
+        "en": "Direct Access",
+        "ru": "Прямой доступ"
+      },
+      "text": {
+        "hy": "Աշխատում ենք ուղղակիորեն արտադրողների հետ, առանց միջնորդների։",
+        "en": "We work directly with manufacturers, without intermediaries.",
+        "ru": "Мы работаем напрямую с производителями, без посредников."
+      }
+    },
+    "certifiedExperts": {
+      "title": {
+        "hy": "Հավաստագրված մասնագետներ",
+        "en": "Certified Experts",
+        "ru": "Сертифицированные специалисты"
+      },
+      "text": {
+        "hy": "Մեր թիմը կազմված է ոլորտի հավաստագրված մասնագետներից։",
+        "en": "Our team consists of certified industry experts.",
+        "ru": "Наша команда состоит из сертифицированных отраслевых специалистов."
+      }
+    },
+    "completePortfolio": {
+      "title": {
+        "hy": "Ամբողջական պորտֆոլիո",
+        "en": "Complete Portfolio",
+        "ru": "Полный портфель"
+      },
+      "text": {
+        "hy": "Առաջարկում ենք լուծումների լայն շրջանակ՝ ձեր բոլոր կարիքների համար։",
+        "en": "We offer a wide range of solutions for all your needs.",
+        "ru": "Мы предлагаем широкий спектр решений для всех ваших потребностей."
+      }
+    },
+    "badgeText": {
+      "hy": "Հաստատված",
+      "en": "Verified",
+      "ru": "Подтверждено"
+    }
+  },
+  "partnersTitle": {
+    "hy": "Մեր գործընկերները",
+    "en": "Our Partners",
+    "ru": "Наши партнёры"
+  },
+  "partnersDescription": {
+    "hy": "",
+    "en": "",
+    "ru": ""
+  }
+},
+  "common": {
+    "getInTouch": {
+      "hy": "Կապ հաստատել",
+      "en": "Get in Touch",
+      "ru": "Связаться с нами"
+    }
+  },
+  "languages": {
+    "hy": "Հայ",
+    "en": "EN",
+    "ru": "RU"
+  },
+  "clientsExperience": {
+    "clients": {
+      "hy": "Հաճախորդներ",
+      "en": "Clients",
+      "ru": "Клиенты"
+    },
+    "trustedOrganizations": {
+      "hy": "Վստահված կազմակերպություններ",
+      "en": "Trusted organizations",
+      "ru": "Доверенные организации"
+    },
+    "description": {
+      "hy": "Կազմակերպություններ, որոնք ապավինում են DigiBase-ի ենթակառուցվածքային փորձաքննությանը։",
+      "en": "Organizations relying on DIGIBASE infrastructure expertise.",
+      "ru": "Организации, полагающиеся на экспертизу DIGIBASE в инфраструктуре."
+    },
+    "currentlyViewing": {
+      "hy": "Ներկայումս դիտվում է",
+      "en": "Currently viewing",
+      "ru": "Сейчас просматривается"
+    }
+  },
+  "partnersExperience": {
+    "strategicPartners": {
+      "hy": "Ռազմավարական գործընկերներ",
+      "en": "Strategic partners",
+      "ru": "Стратегические партнеры"
+    },
+    "technologyAlliances": {
+      "hy": "Տեխնոլոգիական դաշինքներ",
+      "en": "Technology alliances",
+      "ru": "Технологические альянсы"
+    },
+    "description": {
+      "hy": "Աշխարհահռչակ վաճառողներ, որոնք աջակցում են ձեռնարկատիրական ենթակառուցվածքին, ամպային տեխնոլոգիաներին, անվտանգությանը և տվյալների կենտրոններին։",
+      "en": "Global vendors supporting enterprise infrastructure, cloud, security and data center solutions.",
+      "ru": "Глобальные вендоры, поддерживающие корпоративную инфраструктуру, облачные решения, безопасность и дата-центры."
+    },
+    "currentlyViewing": {
+      "hy": "Ներկայումս դիտվում է",
+      "en": "Currently viewing",
+      "ru": "Сейчас просматривается"
+    }
+  },
+  "about": {
+  "aboutUs": {
+    "hy": "Մեր մասին",
+    "en": "About Us",
+    "ru": "О нас"
+  },
+  "heroTitle": {
+    "hy": "Դիջիբեյս — Ձեր վստահելի ՏՏ գործընկերը",
+    "en": "DigiBase — Your Trusted IT Partner",
+    "ru": "DigiBase — Ваш надёжный ИТ-партнёр"
+  },
+  "heroSubtitle1": {
+    "hy": "ՏՏ ենթակառուցվածքների և համակարգային ինտեգրման առաջատար ընկերություն",
+    "en": "A leading company in IT infrastructure and systems integration",
+    "ru": "Ведущая компания в сфере ИТ-инфраструктуры и системной интеграции"
+  },
+  "heroSubtitle2": {
+    "hy": "Մենք ստեղծում ենք ապահով, հուսալի և ժամանակակից տեխնոլոգիական լուծումներ՝ համաշխարհային լավագույն փորձը հարմարեցնելով Ձեր բիզնեսի իրական պահանջներին։",
+    "en": "We create secure, reliable and modern technology solutions by adapting world-class best practices to the real needs of your business.",
+    "ru": "Мы создаём безопасные, надёжные и современные технологические решения, адаптируя лучший мировой опыт под реальные потребности вашего бизнеса."
+  },
+  "heroSubtitleTwo": {
+    "hy": "Մեր աշխատանքային սկզբունքը պարզ է. մենք պարզապես սարքավորումներ չենք տրամադրում։ Մեր նպատակն է ստեղծել ամբողջական տեխնոլոգիական էկոհամակարգեր, որոնք կխթանեն բիզնեսի աճը, կապահովեն աշխատանքի անխափանությունն ու կդառնան ձեր թվային տրանսֆորմացիայի հիմքը։ Մենք օգնում ենք մեր հաճախորդներին վստահ քայլել արագ փոփոխվող թվային աշխարհում։",
+    "en": "Our operating principle is simple: we do not merely supply equipment. Our goal is to build complete technological ecosystems that drive business growth, ensure operational continuity and become the foundation of your digital transformation. We help our clients move confidently through a rapidly changing digital world.",
+    "ru": "Наш рабочий принцип прост: мы не просто поставляем оборудование. Наша цель — создавать целостные технологические экосистемы, которые стимулируют рост бизнеса, обеспечивают непрерывность процессов и становятся фундаментом вашей цифровой трансформации. Мы помогаем клиентам уверенно двигаться в быстро меняющемся цифровом мире."
+  },
+  "philosophyTitle": {
+    "hy": "Մեր առաքելությունը և տեսլականը",
+    "en": "Our Mission & Vision",
+    "ru": "Наша миссия и видение"
+  },
+  "philosophyText1": {
+    "hy": "Մեր առաքելությունը՝ ստեղծել ապահով, հուսալի և ժամանակակից տեխնոլոգիական լուծումներ՝ համաշխարհային լավագույն փորձը հարմարեցնելով Ձեր բիզնեսի իրական պահանջներին։\n\nՄեր տեսլականը՝ դառնալ թվային ենթակառուցվածքների և ՏՏ ինտեգրման ոլորտի ամենավստահելի առաջատարը տարածաշրջանում։",
+    "en": "Our Mission: to create secure, reliable and modern technology solutions by adapting global best practices to the real needs of your business.\n\nOur Vision: to become the most trusted leader in digital infrastructure and IT integration in the region.",
+    "ru": "Наша миссия: создавать безопасные, надёжные и современные технологические решения, адаптируя лучший мировой опыт под реальные потребности вашего бизнеса.\n\nНаше видение: стать самым надёжным лидером в сфере цифровой инфраструктуры и ИТ-интеграции в регионе."
+  },
+  "journeyTitle": {
+    "hy": "Մեր ուղին",
+    "en": "Our Journey",
+    "ru": "Наш путь"
+  },
+  "journeyText1": {
+    "hy": "DigiBase-ը հիմնադրվել է հստակ տեսլականով՝ հայաստանյան շուկա բերել համաշխարհային մակարդակի տեխնոլոգիական լուծումներ և դառնալ երկրի առաջատար ու վստահելի համակարգային ինտեգրատորներից մեկը։",
+    "en": "DigiBase was founded with a clear vision: to bring world-class technology solutions to the Armenian market and become one of the country’s leading and most trusted systems integrators.",
+    "ru": "Компания DigiBase была основана с чётким видением: внедрять на рынке Армении технологические решения мирового уровня и стать одним из ведущих и самых надёжных системных интеграторов в стране."
+  },
+  "journeyText2": {
+    "hy": "Տարիների ընթացքում մենք հաջողությամբ իրականացրել ենք բազմաթիվ նախագծեր բանկային, պետական, կրթական և կորպորատիվ ոլորտներում։ Մեր շարունակական աճի գրավականը հաճախորդների վստահությունն է, աշխարհի առաջատար տեխնոլոգիական բրենդների հետ ռազմավարական գործընկերությունը և երկարաժամկետ արժեք ստեղծող լուծումներ ներդնելու մեր հանձնառությունը։",
+    "en": "Over the years we have successfully delivered numerous projects in the banking, public, education and corporate sectors. The foundation of our continuous growth is client trust, strategic partnerships with the world’s leading technology brands, and our commitment to solutions that create long-term value.",
+    "ru": "За годы работы мы успешно реализовали множество проектов в банковском, государственном, образовательном и корпоративном секторах. Основой нашего непрерывного роста является доверие клиентов, стратегическое партнёрство с ведущими мировыми технологическими брендами и стремление создавать решения, приносящие долгосрочную ценность."
+  },
+  "teamTitle": {
+    "hy": "Թիմը՝ յուրաքանչյուր հաջողության թիկունքում",
+    "en": "The Team Behind Every Success",
+    "ru": "Команда — основа каждого успеха"
+  },
+  "teamText1": {
+    "hy": "Մեր թիմի ուժեղ կողմը մասնագիտական բարձր որակավորումը, արագ աճն ու շարունակական զարգացումն են։\n\nՅուրաքանչյուր հաջողված նախագիծ սկսվում է նվիրված թիմից։ DigiBase-ը համախմբում է բարձր որակավորում ունեցող ինժեներների, համակարգային ճարտարապետների, պրոյեկտ մենեջերների և տեխնիկական խորհրդատուների, որոնց միավորում է մեկ ընդհանուր նպատակ՝ թիմային աշխատանքի ու փորձառության շնորհիվ ապահովել բացառիկ արդյունք։",
+    "en": "The strength of our team lies in high professional qualifications, rapid growth and continuous development.\n\nEvery successful project starts with a dedicated team. DigiBase brings together highly qualified engineers, systems architects, project managers and technical consultants united by one common goal: delivering exceptional results through teamwork and expertise.",
+    "ru": "Сила нашей команды — в высокой профессиональной квалификации, быстром росте и непрерывном развитии.\n\nКаждый успешный проект начинается с преданной делу команды. DigiBase объединяет высококвалифицированных инженеров, системных архитекторов, проджект-менеджеров и технических консультантов, сплочённых единой целью — обеспечивать исключительный результат благодаря командной работе и опыту."
+  },
+  "teamText2": {
+    "hy": "Մենք խրախուսում ենք շարունակական ուսուցման, գիտելիքների փոխանակման և մասնագիտական աճի մշակույթը, ինչը թույլ է տալիս մեր թիմին միշտ քայլել տեխնոլոգիական միտումներին ու միջազգային ստանդարտներին համընթաց։",
+    "en": "We foster a culture of continuous learning, knowledge sharing and professional growth. This allows our team to always stay aligned with technology trends and international standards.",
+    "ru": "Мы развиваем культуру непрерывного обучения, обмена знаниями и профессионального роста, что позволяет нашей команде всегда идти в ногу с технологическими трендами и международными стандартами."
+  },
+  "experienceTitle": {
+    "hy": "Մեր թիմի փորձը",
+    "en": "Our Team’s Expertise",
+    "ru": "Опыт нашей команды"
+  },
+  "sectorsTitle": {
+    "hy": "Ոլորտներ, որտեղ ունենք խորը փորձ",
+    "en": "Sectors where we have deep expertise",
+    "ru": "Отрасли, в которых у нас глубокий опыт"
+  },
+  "sectors": {
+    "hy": ["Բանկեր և ֆինանսներ", "Մանրածախ առևտուր", "Տեղեկատվական տեխնոլոգիաներ", "Պետական կառույցներ"],
+    "en": ["Banking & Finance", "Retail", "Information Technology", "Government Institutions"],
+    "ru": ["Банки и финансы", "Розничная торговля", "Информационные технологии", "Государственные структуры"]
+  },
+  "advantagesTitle": {
+    "hy": "Մեր հիմնական առավելությունները",
+    "en": "Our Key Advantages",
+    "ru": "Наши ключевые преимущества"
+  },
+  "advantages": {
+    "hy": [
+      "Գործընթացների խորը ընկալում — Գիտենք՝ ինչպես են աշխատում բիզնես պրոցեսները և ինչպես դրանք դարձնել ավելի արդյունավետ։",
+      "Շուկայի խորացված իմացություն — Գերազանց ճանաչում ենք ԱՊՀ շուկան և ճիշտ կառավարում հաճախորդների հետ հարաբերությունները։",
+      "Ամուր գործընկերություն — Կարողանում ենք գտնել ճիշտ լուծումներ և կառուցել երկարատև, հուսալի կապեր։"
+    ],
+    "en": [
+      "Deep process understanding — We know how business processes work and how to make them more efficient.",
+      "In-depth market knowledge — We know the CIS market thoroughly and manage client relationships correctly.",
+      "Strong partnerships — We find the right solutions and build long-term, reliable relationships."
+    ],
+    "ru": [
+      "Глубокое понимание процессов — Мы знаем, как работают бизнес-процессы, и как сделать их более эффективными.",
+      "Глубокое знание рынка — Отлично знаем рынок СНГ и правильно выстраиваем отношения с клиентами.",
+      "Надёжное партнёрство — Умеем находить правильные решения и строить долгосрочные, надёжные отношения."
+    ]
+  },
+  "servicesTitle": {
+    "hy": "Ծառայություններ",
+    "en": "Services",
+    "ru": "Услуги"
+  },
+  "services": {
+    "designConsulting": {
+      "title": {
+        "hy": "Նախագծում և Խորհրդատվություն",
+        "en": "Design & Consulting",
+        "ru": "Проектирование и консалтинг"
+      },
+      "items": {
+        "hy": [
+          "Ձեր ՏՏ համակարգերի վիճակի գնահատում",
+          "Հարմարեցված տեխնիկական լուծումների մշակում",
+          "Ամբողջական տեխնիկական փաստաթղթավորում"
+        ],
+        "en": [
+          "Assessment of the current state of your IT systems",
+          "Development of tailored technical solutions",
+          "Complete technical documentation"
+        ],
+        "ru": [
+          "Оценка текущего состояния ваших ИТ-систем",
+          "Разработка адаптированных технических решений",
+          "Полная техническая документация"
+        ]
+      }
+    },
+    "implementationFinancing": {
+      "title": {
+        "hy": "Համակարգերի ներդրում և ֆինանսավորում",
+        "en": "Systems Implementation & Financing",
+        "ru": "Внедрение систем и финансирование"
+      },
+      "items": {
+        "hy": [
+          "Նախագծի իրականացում սկզբից մինչև վերջ (end-to-end) — սարքավորումների տեղադրում և գործարկում",
+          "Վճարման ճկուն պայմաններ",
+          "Միջազգային ֆինանսավորման հնարավորություններ"
+        ],
+        "en": [
+          "End-to-end project delivery — equipment installation and commissioning",
+          "Flexible payment terms",
+          "International financing options"
+        ],
+        "ru": [
+          "Реализация проекта от начала до конца (end-to-end) — монтаж и запуск оборудования",
+          "Гибкие условия оплаты",
+          "Возможности международного финансирования"
+        ]
+      }
+    },
+    "afterSales": {
+      "title": {
+        "hy": "Հետվաճառքային Սպասարկում",
+        "en": "After-Sales Support",
+        "ru": "Послепродажное обслуживание"
+      },
+      "items": {
+        "hy": [
+          "Տեխնիկական սպասարկում և պաշտոնական երաշխիք",
+          "Պահեստամասերի արագ մատակարարում",
+          "24/7 շուրջօրյա աջակցություն անհետաձգելի խնդիրների դեպքում"
+        ],
+        "en": [
+          "Technical maintenance and official warranty",
+          "Fast supply of spare parts",
+          "24/7 round-the-clock support for urgent issues"
+        ],
+        "ru": [
+          "Техническое обслуживание и официальная гарантия",
+          "Быстрая поставка запасных частей",
+          "Круглосуточная поддержка 24/7 при неотложных проблемах"
+        ]
+      }
+    }
+  },
+  "teamText3": {
+    "hy": "Մեր հաճախորդներն աշխատում են այնպիսի մասնագետների հետ, որոնք լսում են, հասկանում խնդիրը և պատասխանատվություն կրում յուրաքանչյուր մարտահրավերի համար։ Նախնական խորհրդատվությունից ու նախագծումից մինչև ներդրում և հետագա տեխնիկական սպասարկում՝ մենք ապահովում ենք բարձր որակ, ինչն էլ հենց դառնում է մեր երկարաժամկետ գործընկերության հիմքը։",
+    "en": "Our clients work with specialists who listen, understand the problem and take full responsibility for every challenge. From initial consultation and design to implementation and ongoing technical support, we deliver high quality that becomes the foundation of our long-term partnerships.",
+    "ru": "Наши клиенты работают со специалистами, которые умеют слушать, глубоко понимают задачу и несут ответственность за каждый вызов. От первичного консалтинга и проектирования до внедрения и последующего технического обслуживания — мы обеспечиваем высокое качество, которое становится основой долгосрочного партнёрства."
+  },
+  "teamText4": {
+    "hy": "DigiBase-ում մենք պարզապես տեխնոլոգիաներ չենք ներդնում. մենք կառուցում ենք վստահելի հարաբերություններ, լուծում բարդ խնդիրներ և օգնում կազմակերպություններին վստահորեն կերտել իրենց թվային ապագան։",
+    "en": "At DigiBase we do not simply implement technology — we build trusted relationships, solve complex challenges and help organisations confidently shape their digital future.",
+    "ru": "В DigiBase мы не просто внедряем технологии — мы строим доверительные отношения, решаем сложные задачи и помогаем организациям уверенно создавать своё цифровое будущее."
+  }
+},
+  "partnersPage": {
+    "partnersClients": {
+      "hy": "Գործընկերներ և Հաճախորդներ",
+      "en": "Partners & Clients",
+      "ru": "Партнеры и Клиенты"
+    },
+    "ecosystem": {
+      "hy": "Էկոհամակարգ",
+      "en": "ecosystem",
+      "ru": "экосистема"
+    },
+    "behindEveryDeployment": {
+      "hy": "Էկոհամակարգը յուրաքանչյուր նախագծի հետևում։",
+      "en": "The ecosystem behind every deployment.",
+      "ru": "Экосистема за каждым развертыванием."
+    }
+  },
+  "cta": {
+    "badge": {
+      "hy": "ՍԿՍԵԼ ԱՇԽԱՏԱՆՔԸ",
+      "en": "GET STARTED",
+      "ru": "НАЧАТЬ РАБОТУ"
+    },
+    "title": {
+      "hy": "Պատրա՞ստ եք ձևափոխել Ձեր ենթակառուցվածքը:",
+      "en": "Ready to Transform Your Infrastructure?",
+      "ru": "Готовы трансформировать вашу инфраструктуру?"
+    },
+    "description": {
+      "hy": "Քննարկենք, թե ինչպես DigiBase-ը կարող է օգնել Ձեզ կառուցել հուսալի, ընդլայնվող և անվտանգ տեխնոլոգիական հիմք Ձեր կազմակերպության համար:",
+      "en": "Let's discuss how DigiBase can help you build a resilient, scalable, and secure technology foundation for your organization.",
+      "ru": "Давайте обсудим, как DigiBase может помочь вам создать надежный, масштабируемый и безопасный технологический фундамент."
+    },
+    "primaryBtn": {
+      "hy": "Պլանավորել խորհրդատվություն",
+      "en": "Schedule a Consultation",
+      "ru": "Запланировать консультацию"
+    },
+    "secondaryBtn": {
+      "hy": "Տեսնել աշխատանքները",
+      "en": "View Our Work",
+      "ru": "Посмотреть работы"
+    },
+    "contact": {
+      "emailTitle": {
+        "hy": "Գրեք մեզ",
+        "en": "Email Us",
+        "ru": "Напишите нам"
+      },
+      "phoneTitle": {
+        "hy": "Զանգահարեք մեզ",
+        "en": "Call Us",
+        "ru": "Позвоните нам"
+      },
+      "addressTitle": {
+        "hy": "Այցելեք մեզ",
+        "en": "Visit Us",
+        "ru": "Посетите нас"
+      },
+      "address": {
+        "hy": "ՀՀ, ք. Երևան 0019, Մ. Բաղրամյան պող., 20 շենք, բն. 3",
+        "en": "Apt. 3, Bldg. 20, M. Baghramyan Ave., Yerevan 0019, RA",
+        "ru": "РА, г. Ереван 0019, пр. М. Баграмяна, д. 20, кв. 3"
+      }
+    }
+  },
+  "partners": {
+    "eyebrow": {
+      "hy": "ՀԱՃԱԽՈՐԴՆԵՐ",
+      "en": "CUSTOMERS",
+      "ru": "КЛИЕНТЫ"
+    },
+    "title": {
+      "hy": "Գործընկերություն՝ հիմնված",
+      "en": "Partnerships Built on",
+      "ru": "Партнерство, основанное на"
+    },
+    "trust": {
+      "hy": "վստահության վրա",
+      "en": "Trust",
+      "ru": "доверии"
+    },
+    "description1": {
+      "hy": "Մենք հպարտ ենք համագործակցել տարածաշրջանի առաջատար բանկերի, պետական կառույցների և տեխնոլոգիական հսկաների հետ:",
+      "en": "We are proud to collaborate with leading banks, public institutions, and technology leaders across the region.",
+      "ru": "Мы работаем с ведущими мировыми IT-производителями, чтобы предоставлять вам лучшие и самые надежные решения."
+    },
+    "description2": {
+      "hy": "Մեր հաճախորդների թվում են ֆինանսական հաստատություններ, պետական կառույցներ, կրթական կենտրոններ, ինչպես նաև խոշոր կորպորացիաներ։ Նրանցից յուրաքանչյուրն ունի յուրահատուկ մարտահրավերներ և որակի բարձր պահանջներ։",
+      "en": "Our clientele includes financial institutions, public sector entities, educational centers, and large corporations—each with unique challenges and high standards for quality.",
+      "ru": "В числе наших клиентов — финансовые институты, государственные организации, образовательные центры, а также крупные корпорации. У каждого из них свои уникальные вызовы и высокие требования к качеству."
+    },
+    "description3": {
+      "hy": "Մենք նույն պատասխանատվությամբ ենք մոտենում ամեն մի նախագծի՝ նպատակ ունենալով ոչ միայն ներդնել հուսալի համակարգեր, այլև կառուցել երկարաժամկետ գործընկերություն, որը շարունակվում է նախագծի ավարտից հետո էլ։ Հաճախորդների վստահությունը մեր ամենամեծ ձեռքբերումն է։",
+      "en": "We approach every project with the same level of responsibility. Our goal is not just to deploy reliable systems, but to build long-term partnerships that extend far beyond project implementation. The trust of our customers is our greatest achievement.",
+      "ru": "Мы подходим к каждому проекту с одинаковой ответственностью, стремясь не просто внедрить надежные системы, но и построить долгосрочное партнерство, которое продолжается и после завершения проекта. Доверие клиентов — наше главное достижение."
+    },
+    "trustCards": {
+      "enterprise": {
+        "title": {
+          "hy": "Խոշոր ընկերություններ",
+          "en": "Enterprise Clients",
+          "ru": "Корпоративные клиенты"
+        },
+        "text": {
+          "hy": "Բանկերի, կորպորացիաների և կազմակերպությունների համար առաքելության համար կարևոր ենթակառուցվածքային լուծումներ։",
+          "en": "Supporting banks, corporations and organizations with mission-critical infrastructure solutions.",
+          "ru": "Поддержка банков, корпораций и организаций с критически важными инфраструктурными решениями."
+        }
+      },
+      "security": {
+        "title": {
+          "hy": "Հուսալի համակարգեր",
+          "en": "Reliable Systems",
+          "ru": "Надежные системы"
+        },
+        "text": {
+          "hy": "Ապահով հարթակների նախագծում, որոնք երաշխավորում են հասանելիություն, պաշտպանություն և գործառնական արդյունավետություն։",
+          "en": "Designing secure platforms that guarantee availability, protection and operational efficiency.",
+          "ru": "Проектирование безопасных платформ, гарантирующих доступность, защиту и операционную эффективность."
+        }
+      },
+      "team": {
+        "title": {
+          "hy": "Երկարաժամկետ համագործակցություն",
+          "en": "Long-Term Partnership",
+          "ru": "Долгосрочное партнерство"
+        },
+        "text": {
+          "hy": "Համատեղ աշխատանք հաճախորդների հետ շարունակական նորարարության և տեխնոլոգիական զարգացման միջոցով։",
+          "en": "Working together with customers through continuous innovation and technology evolution.",
+          "ru": "Совместная работа с клиентами через непрерывные инновации и технологическое развитие."
+        }
+      }
+    },
+    "clientsTitle": {
+      "hy": "Մեր",
+      "en": "Our",
+      "ru": "Наши"
+    },
+    "clientsSubtitle": {
+      "hy": "գործընկերը",
+      "en": "partners",
+      "ru": "партнеры"
+    },
+    "clientsDescription": {
+      "hy": "",
+      "en": "",
+      "ru": ""
+    },
+    "ctaTitle": {
+      "hy": "",
+      "en": "",
+      "ru": ""
+    },
+    "ctaDescription": {
+      "hy": "",
+      "en": "",
+      "ru": ""
+    }
+  },
+  "contact": {
+    "eyebrow": {
+      "hy": "ԿԱՊ ՄԵԶ ՀԵՏ",
+      "en": "CONTACT US",
+      "ru": "СВЯЗАТЬСЯ С НАМИ"
+    },
+    "heroTitle": {
+      "hy": "Ստեղծենք ձեր տեխնոլոգիական ",
+      "en": "Let’s Shape Your Technological ",
+      "ru": "Создадим ваше технологическое "
+    },
+    "heroTitleHighlight": {
+      "hy": "ապագան միասին",
+      "en": "Future Together",
+      "ru": "будущее вместе"
+    },
+    "heroDescription": {
+      "hy": "Ունե՞ք նոր նախագիծ, ցանկանում եք թարմացնել ձեր ՏՏ ենթակառուցվածքը, թե՞ պարզապես հարցեր ունեք։ Գրեք կամ զանգահարեք մեզ. DigiBase-ի թիմը սիրով կօգնի գտնել լավագույն տեխնոլոգիական լուծումը։",
+      "en": "Planning a new project, looking to upgrade your IT infrastructure, or simply have a question? Drop us a line or give us a call. The DigiBase team is ready to help you find the ideal technology solution.",
+      "ru": "Планируете новый проект, хотите модернизировать ИТ-инфраструктуру или у вас просто есть вопросы? Напишите или позвоните нам — команда DigiBase с радостью поможет найти оптимальное технологическое решение."
+    },
+    "officeTitle": {
+      "hy": "Հանդիպենք մեր գրասենյակում",
+      "en": "Visit Our Office",
+      "ru": "Встретимся в нашем офисе"
+    },
+    "officeDescription": {
+      "hy": "Մենք միշտ ուրախ ենք հանդիպել մեր հաճախորդներին ու գործընկերներին։ Կարող եք նախապես պայմանավորվել՝ ձեր նախագիծը տեղում, անձամբ քննարկելու համար։",
+      "en": "We are always happy to meet our clients and partners. You can schedule an appointment in advance to discuss your project with our team in person.",
+      "ru": "Мы всегда рады личным встречам с нашими клиентами и партнерами. Вы можете заранее запланировать визит, чтобы обсудить ваш проект с нашей командой на месте."
+    },
+    "formTitle": {
+      "hy": "Գրեք մեզ",
+      "en": "Drop Us a Message",
+      "ru": "Напишите нам"
+    },
+    "formSubtitle": {
+      "hy": "Լրացրեք հայտը, և մեր թիմը հնարավորինս արագ կապ կհաստատի ձեզ հետ։",
+      "en": "Fill out the form below, and our team will get back to you as shortly as possible.",
+      "ru": "Заполните заявку, и наша команда свяжется с вами в кратчайшие сроки."
+    },
+    "toastSuccess": {
+      "hy": "Ձեր հաղորդագրությունը հաջողությամբ ուղարկվեց։ Շուտով կկապվենք ձեզ հետ։",
+      "en": "Your message has been sent. We'll get back to you shortly.",
+      "ru": "Ваше сообщение отправлено. Мы скоро свяжемся с вами."
+    },
+    "info": {
+      "addressTitle": {
+        "hy": "Հասցե",
+        "en": "Address",
+        "ru": "Адрес"
+      },
+      "address": {
+        "hy": "ՀՀ, ք. Երևան 0019, Մ. Բաղրամյան պող., 20 շենք, բն. 3",
+        "en": "Apt. 3, Bldg. 20, M. Baghramyan Ave., Yerevan 0019, RA",
+        "ru": "РА, г. Ереван 0019, пр. М. Баграмяна, здание 20, кв. 3"
+      },
+      "emailTitle": {
+        "hy": "Էլ. հասցե",
+        "en": "Email",
+        "ru": "Эл. почта"
+      },
+      "phoneTitle": {
+        "hy": "Հեռախոս",
+        "en": "Phone",
+        "ru": "Телефон"
+      },
+      "companyTitle": {
+        "hy": "",
+        "en": "",
+        "ru": ""
+      }
+    },
+    "form": {
+      "fullName": {
+        "hy": "Անուն, Ազգանուն",
+        "en": "Full Name",
+        "ru": "Имя, Фамилия"
+      },
+      "company": {
+        "hy": "Ընկերություն",
+        "en": "Company",
+        "ru": "Компания"
+      },
+      "email": {
+        "hy": "Էլ. փոստ",
+        "en": "Email Address",
+        "ru": "Эл. почта"
+      },
+      "phone": {
+        "hy": "Հեռախոսահամար",
+        "en": "Phone Number",
+        "ru": "Номер телефона"
+      },
+      "phoneOptional": {
+        "hy": "Հեռախոսահամար (ոչ պարտադիր)",
+        "en": "Phone Number (Optional)",
+        "ru": "Номер телефона (необязательно)"
+      },
+      "subject": {
+        "hy": "Հաղորդագրության թեման",
+        "en": "Subject",
+        "ru": "Тема сообщения"
+      },
+      "message": {
+        "hy": "Ձեր հաղորդագրությունը",
+        "en": "Your Message",
+        "ru": "Ваше сообщение"
+      },
+      "send": {
+        "hy": "Ուղարկել հաղորդագրությունը",
+        "en": "Send Message",
+        "ru": "Отправить сообщение"
+      },
+      "sending": {
+        "hy": "Ուղարկվում է...",
+        "en": "Sending...",
+        "ru": "Отправка..."
+      }
+    },
+    "toastError": {
+      "hy": "Չհաջողվեց ուղարկել հաղորդագրությունը։ Փորձեք կրկին։",
+      "en": "Couldn't send your message. Please try again.",
+      "ru": "Не удалось отправить сообщение. Попробуйте еще раз."
+    }
+  },
+  "vendors": {
+    "eyebrow": {
+      "en": "Partnership",
+      "hy": "Գործընկերություն",
+      "ru": "Партнерство"
+    },
+  "title1": {
+  "hy": "Մեզ վստահում են",
+  "en": "They Trust Us",
+  "ru": "Нам доверяют"
+},
+"title2": {
+  "hy": "",
+  "en": "",
+  "ru": ""
+},
+"description": {
+  "hy": "Մենք հպարտ ենք համագործակցել տարածաշրջանի առաջատար բանկերի, պետական կառույցների և տեխնոլոգիական հսկաների հետ:",
+  "en": "We are proud to collaborate with the region's leading banks, government institutions, and technology giants.",
+  "ru": "Мы гордимся сотрудничеством с ведущими банками региона, государственными учреждениями и технологическими гигантами."
+},
+    "deliversLabel": {
+      "en": "What this partnership delivers:",
+      "hy": "Ինչ է տալիս այս գործընկերությունը.",
+      "ru": "Что дает это партнерство:"
+    },
+    "deliverables": [
+      {
+        "title": {
+          "en": "Direct Access",
+          "hy": "Ուղիղ Հասանելիություն",
+          "ru": "Прямой Доступ"
+        },
+        "text": {
+          "en": "We work exclusively with official, certified technologies and equipment.",
+          "hy": "Մենք աշխատում ենք բացառապես պաշտոնական, սերտիֆիկացված տեխնոլոգիաների և սարքավորումների հետ։",
+          "ru": "Мы работаем исключительно с официальными, сертифицированными технологиями и оборудованием."
+        }
+      },
+      {
+        "title": {
+          "en": "Expert Qualifications",
+          "hy": "Փորձագիտական Որակավորում",
+          "ru": "Экспертная Квалификация"
+        },
+        "text": {
+          "en": "Our team undergoes regular, direct training and certification by the manufacturers.",
+          "hy": "Մեր թիմը պարբերաբար վերապատրաստվում և սերտիֆիկացվում է անմիջապես արտադրողների կողմից։",
+          "ru": "Наша команда регулярно проходит прямое обучение и сертификацию у производителей."
+        }
+      },
+      {
+        "title": {
+          "en": "Comprehensive Portfolio",
+          "hy": "Համապարփակ Պորտֆոլիո",
+          "ru": "Комплексное Портфолио"
+        },
+        "text": {
+          "en": "We deploy infrastructure projects of any complexity—from modular data centers to advanced cybersecurity systems.",
+          "hy": "Մենք իրականացնում ենք ցանկացած բարդության ենթակառուցվածքային նախագծեր՝ մոդուլային տվյալների կենտրոններից մինչև առաջադեմ կիբերանվտանգության համակարգեր։",
+          "ru": "Мы развертываем инфраструктурные проекты любой сложности — от модульных центров обработки данных до передовых систем кибербезопасности."
+        }
+      }
+    ],
+    "expTitle1": {
+      "en": "Our",
+      "hy": "Մեր",
+      "ru": "Наши"
+    },
+    "expTitle2": {
+      "en": "Customers",
+      "hy": "Մատակարարները",
+      "ru": "Поставщики"
+    }
+  },
+  "solutions": {
+    "eyebrow": {
+      "en": "Solutions & Projects",
+      "hy": "Լուծումներ և Նախագծեր",
+      "ru": "Решения и Проекты"
+    },
+    "title1": {
+      "en": "Our Solutions",
+      "hy": "Մեր Նախագծերը",
+      "ru": "Наша Решения"
+    },
+    "title2": {
+      "en": "",
+      "hy": "",
+      "ru": ""
+    },
+    "description1": {
+      "en": "We design and implement technology solutions that guarantee the seamless operation and digital evolution of critical enterprise systems.",
+      "hy": "Մենք նախագծում և ներդնում ենք տեխնոլոգիական լուծումներ, որոնք ապահովում են կազմակերպությունների կարևորագույն համակարգերի անխափանությունն ու թվային զարգացումը։",
+      "ru": "Мы проектируем и внедряем технологические решения, которые обеспечивают бесперебойную работу критически важных систем и цифровое развитие организаций."
+    },
+    "description2": {
+      "en": "Explore DigiBase’s featured implementations, which showcase our engineering capabilities and our ability to deliver precise solutions to complex technical challenges.",
+      "hy": "Ծանոթացեք DigiBase-ի իրականացրած առանցքային նախագծերին, որոնք լավագույնս ցույց են տալիս մեր ինժեներական հնարավորություններն ու բարդ խնդիրներին ճշգրիտ լուծումներ տալու կարողությունը։",
+      "ru": "Ознакомьтесь с ключевыми проектами DigiBase, которые наглядно подтверждают наши инженерные возможности и умение находить точные решения для сложных технологических задач."
+    },
+    "featuredTitle": {
+      "en": "Featured Projects",
+      "hy": "Առանցքային նախագծեր",
+      "ru": "Ключевые проекты"
+    },
+    "featuredSubtitle": {
+      "en": "Discover some of our most significant deployments, highlighting DigiBase’s engineering expertise and commitment to excellence.",
+      "hy": "Ծանոթացեք մեր իրականացրած առավել նշանակալի նախագծերին, որոնք փաստում են DigiBase-ի ինժեներական հնարավորություններն ու բարձր որակ ապահովելու հանձնառությունը։",
+      "ru": "Узнайте больше о наших наиболее значимых внедрениях, отражающих экспертизу DigiBase и наше стремление к высоким стандартам качества."
+    },
+    "technologiesLabel": {
+      "en": "Technologies",
+      "hy": "Տեխնոլոգիաներ",
+      "ru": "Технологии"
+    },
+    "businessOutcomeLabel": {
+      "en": "Business outcome",
+      "hy": "Բիզնես արդյունք",
+      "ru": "Бизнес-результат"
+    }
+  },
+  "footer": {
+    "description": {
+      "en": "DIGIBASE delivers enterprise technology solutions, state-of-the-art infrastructure, and certified partnerships to power digital transformation.",
+      "hy": "DIGIBASE-ը մատուցում է կորպորատիվ տեխնոլոգիական լուծումներ, ժամանակակից ենթակառուցվածքներ և սերտիֆիկացված գործընկերություններ՝ թվային փոխակերպումն ապահովելու համար։",
+      "ru": "DIGIBASE предоставляет корпоративные технологические решения, передовую инфраструктуру и сертифицированные партнерства для обеспечения цифровой трансформации."
+    },
+    "companyTitle": {
+      "en": "Company",
+      "hy": "Ընկերություն",
+      "ru": "Компания"
+    },
+    "solutionsTitle": {
+      "en": "Solutions",
+      "hy": "Լուծումներ",
+      "ru": "Решения"
+    },
+    "resourcesTitle": {
+      "en": "Resources",
+      "hy": "Ռեսուրսներ",
+      "ru": "Ресурсы"
+    },
+    "aboutUs": {
+      "en": "About Us",
+      "hy": "Մեր մասին",
+      "ru": "О нас"
+    },
+    "ourTeam": {
+      "en": "Our Team",
+      "hy": "Մեր թիմը",
+      "ru": "Наша команда"
+    },
+    "careers": {
+      "en": "Careers",
+      "hy": "Կարիերա",
+      "ru": "Карьера"
+    },
+    "contact": {
+      "en": "Contact",
+      "hy": "Կապ",
+      "ru": "Контакты"
+    },
+    "dataCenters": {
+      "en": "Data Centers",
+      "hy": "Տվյալների կենտրոններ",
+      "ru": "Дата-центры"
+    },
+    "cloudInfrastructure": {
+      "en": "Cloud Infrastructure",
+      "hy": "Ամպային ենթակառուցվածք",
+      "ru": "Облачная инфраструктура"
+    },
+    "securitySystems": {
+      "en": "Security Systems",
+      "hy": "Անվտանգության համակարգեր",
+      "ru": "Системы безопасности"
+    },
+    "networkSolutions": {
+      "en": "Network Solutions",
+      "hy": "Ցանցային լուծումներ",
+      "ru": "Сетевые решения"
+    },
+    "caseStudies": {
+      "en": "Case Studies",
+      "hy": "Նախագծեր",
+      "ru": "Кейсы"
+    },
+    "blog": {
+      "en": "Blog",
+      "hy": "Բլոգ",
+      "ru": "Блог"
+    },
+    "documentation": {
+      "en": "Documentation",
+      "hy": "Փաստաթղթեր",
+      "ru": "Документация"
+    },
+    "support": {
+      "en": "Support",
+      "hy": "Աջակցություն",
+      "ru": "Поддержка"
+    },
+    "copyright": {
+      "en": "All rights reserved.",
+      "hy": "Բոլոր իրավունքները պաշտպանված են։",
+      "ru": "Все права защищены."
+    }
+  },
+  "compliancePage": {
+    "mainTitle": {
+      "en": "Compliance Statement",
+      "hy": "Համապատասխանության հայտարարություն",
+      "ru": "Заявление о соответствии требованиям"
+    },
+    "mainSubtitle": {
+      "en": "Compliance Statement & Legal Standards",
+      "hy": "Համապատասխանության հայտարարություն և իրավական չափանիշներ",
+      "ru": "Заявление о соответствии и правовые стандарты"
+    },
+    "sectionTitle": {
+      "en": "Compliance Statement",
+      "hy": "Համապատասխանության հայտարարություն",
+      "ru": "Заявление о соответствии требованиям"
+    },
+    "paragraph1": {
+      "en": "DigiBase LLC operates in accordance with the principles of legality, transparency, and accountability, guided by applicable legislation, contractual obligations, and legal requirements relevant to our activities.",
+      "hy": "ԴիջիԲեյս ՍՊԸ գործում է օրինականության, թափանցիկության և պատասխանատվության սկզբունքներով՝ առաջնորդվելով կիրառելի օրենսդրությամբ, պայմանագրային պարտավորություններով և մեր գործունեությանը վերաբերող իրավական պահանջներով։",
+      "ru": "Компания «ДиджиБейс» ООО осуществляет свою деятельность на принципах законности, прозрачности и ответственности, руководствуясь применимым законодательством, договорными обязательствами и правовыми требованиями, относящимися к нашей деятельности."
+    },
+    "paragraph2": {
+      "en": "Compliance risk management is an important part of our operations. We pay particular attention to applicable sanctions requirements and take related compliance risks into account in the course of our activities. At the same time, we are guided by principles of business integrity and anti-corruption, as well as, where applicable, requirements related to the prevention of money laundering and the financing of terrorism.",
+      "hy": "Համապատասխանության ռիսկերի կառավարումը մեր գործունեության կարևոր մասն է։ Մենք առանձնահատուկ ուշադրություն ենք դարձնում կիրառելի պատժամիջոցների պահանջներին և մեր գործունեության ընթացքում հաշվի ենք առնում դրանց համապատասխանության հետ կապված ռիսկերը։ Միաժամանակ առաջնորդվում ենք գործարար բարեվարքության և հակակոռուպցիոն սկզբունքներով, ինչպես նաև, կիրառելիության դեպքում, փողերի լվացման և ահաբեկչության ֆինանսավորման կանխարգելման ոլորտին առնչվող պահանջներով։",
+      "ru": "Управление рисками соответствия является важной частью нашей деятельности. Мы уделяем особое внимание применимым требованиям в области санкций и учитываем связанные с этим риски соответствия в ходе нашей деятельности. Одновременно мы руководствуемся принципами деловой добросовестности и противодействия коррупции, а также, в применимых случаях, требованиями, касающимися предотвращения отмывания денег и финансирования терроризма."
+    },
+    "paragraph3": {
+      "en": "We value honest and responsible business conduct and cooperate only with partners who share these principles. For us, compliance is not only about adhering to legal requirements but also serves as an important foundation for reliable and sustainable business relationships.",
+      "hy": "Մենք կարևորում ենք ազնիվ ու պատասխանատու գործարար վարքագիծը և համագործակցում ենք միայն այն գործընկերների հետ, ովքեր կիսում են այս սկզբունքները։ Մեզ համար համապատասխանությունը ոչ միայն իրավական պահանջների պահպանումն է, այլև վստահելի և կայուն գործարար հարաբերությունների կարևոր հիմքը։",
+      "ru": "Мы придаем большое значение честному и ответственному деловому поведению и сотрудничаем только с теми партнёрами, которые разделяют данные принципы. Для нас соответствие требованиям — это не только соблюдение правовых норм, но и важная основа для надёжных и устойчивых деловых отношений."
+    }
+  }
+}

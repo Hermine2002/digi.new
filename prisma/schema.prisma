@@ -1,0 +1,46 @@
+// Prisma schema for the DigiBase website backend.
+// Uses PostgreSQL — works with any managed Postgres (Neon, Supabase, Railway,
+// RDS, etc.) and with the local docker-compose Postgres for development.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum SubmissionStatus {
+  NEW
+  IN_PROGRESS
+  RESOLVED
+  SPAM
+}
+
+model ContactSubmission {
+  id        String            @id @default(cuid())
+  name      String
+  company   String
+  email     String
+  phone     String?
+  subject   String?
+  message   String
+
+  status    SubmissionStatus  @default(NEW)
+
+  // Basic request metadata, useful for spam triage and support follow-up.
+  locale    String?
+  ipAddress String?
+  userAgent String?
+
+  emailSentAt DateTime?
+  smsSentAt   DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([createdAt])
+  @@index([status])
+  @@map("contact_submissions")
+}

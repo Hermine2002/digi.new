@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: digibase
+      POSTGRES_PASSWORD: digibase
+      POSTGRES_DB: digibase
+    ports:
+      - "5432:5432"
+    volumes:
+      - digibase_pgdata:/var/lib/postgresql/data
+
+volumes:
+  digibase_pgdata:
