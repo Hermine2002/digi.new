@@ -111,7 +111,7 @@ export default function AboutPage() {
                       ? "Մեր առաքելությունը"
                       : language === "ru"
                       ? "Наша миссия"
-                      : "Our Mission"}
+                      : "Company Mission"}
                   </h3>
                   <p className="mt-4 text-base md:text-lg leading-relaxed text-zinc-600">
                     {language === "hy"
