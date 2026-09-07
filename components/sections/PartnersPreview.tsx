@@ -43,12 +43,12 @@ function PartnerLogosTilted() {
     >
       {/* Category badges */}
       <div className="flex items-center gap-2">
-        <span className="px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wide bg-[#00c050]/10 text-[#00c050]">
+        {/* <span className="px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wide bg-[#00c050]/10 text-[#00c050]">
           {pe?.strategicPartners?.[language] || "Strategic partners"}
         </span>
         <span className="px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wide bg-zinc-100 text-zinc-500">
           {pe?.technologyAlliances?.[language] || "Technology alliances"}
-        </span>
+        </span> */}
       </div>
 
       {/* Tilted carousel */}
