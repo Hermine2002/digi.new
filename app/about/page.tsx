@@ -74,7 +74,8 @@ export default function AboutPage() {
         </AboutSectionReveal>
 
         {/* ==================== WHO WE ARE ==================== */}
-        <AboutSectionReveal index={1} activeIndexRef={activeIndexRef}>
+
+              <AboutSectionReveal index={1} activeIndexRef={activeIndexRef}>
           <section className="border-b border-border py-20 md:py-28">
             <div className="container-x">
               <div className="mb-12 md:mb-16">
@@ -113,7 +114,11 @@ export default function AboutPage() {
                       : "Our Mission"}
                   </h3>
                   <p className="mt-4 text-base md:text-lg leading-relaxed text-zinc-600">
-                    {ab.philosophyText1[language].split("\n\n")[0].replace(/^.*?:\s*/, "")}
+                    {language === "hy"
+                      ? "Մենք ստեղծում ենք ապահով, հուսալի և ժամանակակից տեխնոլոգիական լուծումներ՝ համաշխարհային լավագույն փորձը հարմարեցնելով Ձեր բիզնեսի իրական պահանջներին:"
+                      : language === "ru"
+                      ? "Предоставлять безопасные, масштабируемые и инновационные технологические решения, соединяя мировой опыт с локальными потребностями вашего бизнеса."
+                      : "To deliver secure, scalable, and innovative technology solutions by connecting global expertise with local needs."}
                   </p>
                 </div>
 
@@ -140,12 +145,11 @@ export default function AboutPage() {
                       : "Our Vision"}
                   </h3>
                   <p className="mt-4 text-base md:text-lg leading-relaxed text-zinc-600">
-                    {ab.philosophyText1[language].split("\n\n")[1]?.replace(/^.*?:\s*/, "") ||
-                      (language === "hy"
-                        ? "Դառնալ թվային ենթակառուցվածքների և ՏՏ ինտեգրման ոլորտի ամենավստահելի առաջատարը տարածաշրջանում։"
-                        : language === "ru"
-                        ? "Стать самым надёжным лидером в сфере цифровой инфраструктуры и ИТ-интеграции в регионе."
-                        : "To become the most trusted leader in digital infrastructure and IT integration in the region.")}
+                    {language === "hy"
+                      ? "Դառնալ թվային ենթակառուցվածքների և ՏՏ ինտեգրման ոլորտի ամենավստահելի առաջատարը տարածաշրջանում:"
+                      : language === "ru"
+                      ? "Быть надежным лидером в области цифровой инфраструктуры и системной интеграции во всем регионе."
+                      : "To be a trusted leader in digital infrastructure and system integration across the region."}
                   </p>
                 </div>
               </div>
