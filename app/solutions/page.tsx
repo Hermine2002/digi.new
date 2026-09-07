@@ -6,7 +6,6 @@ import * as THREE from "three";
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 import { getProjects } from "@/data/projects";
-import { ProjectsBackdrop3DLoader } from "@/components/solutions/ProjectsBackdrop3DLoader";
 import { ProjectSectionReveal, useSectionRefs } from "@/components/solutions/ProjectSectionReveal";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -215,7 +214,7 @@ export default function SolutionsPage() {
 
   return (
     <main className="relative bg-white text-black min-h-screen">
-      {/* ========== FIXED 3D BACKGROUND (ամբողջ էջի վրա) ========== */}
+      {/* ========== FIXED 3D BACKGROUND ========== */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <Canvas camera={{ position: [0, 3.1, 10], fov: 42 }}>
           <color attach="background" args={["#f8fafc"]} />
@@ -227,7 +226,7 @@ export default function SolutionsPage() {
         </Canvas>
       </div>
 
-      {/* ========== CONTENT (վերևում) ========== */}
+      {/* ========== CONTENT ========== */}
       <div className="relative z-10">
         {/* HERO */}
         <section className="relative overflow-hidden border-b border-zinc-200/60 min-h-[85vh] flex items-center">
@@ -288,8 +287,8 @@ export default function SolutionsPage() {
                   {(language === "hy"
                     ? ["Սերվերներ և տվյալների պահպանում", "AI և GPU հարթակներ", "Վիրտուալացում և Cloud"]
                     : language === "ru"
-                    ? ["Серверы и хранение данных", "AI и GPU платформы", "Виртуализация и Cloud"]
-                    : ["Servers & Data Storage", "AI & GPU Platforms", "Virtualization & Cloud"]
+                    ? ["Серверы и системы хранения", "ИИ и GPU-платформы", "Виртуализация и облачные решения"]
+                    : ["Servers & Storage", "AI & GPU Platforms", "Virtualization & Cloud"]
                   ).map((item, i) => (
                     <li key={i} className="flex items-start gap-2.5 text-zinc-600">
                       <span className="mt-1.5 text-[#00c050] text-sm">›</span>
@@ -312,14 +311,14 @@ export default function SolutionsPage() {
                     ? "Ցանցեր և Կիբեռանվտանգություն"
                     : language === "ru"
                     ? "Сети и Кибербезопасность"
-                    : "Networks & Cybersecurity"}
+                    : "Networking & Cybersecurity"}
                 </h3>
                 <ul className="mt-5 space-y-2.5">
                   {(language === "hy"
                     ? ["Կորպորատիվ ցանցային տեխնոլոգիաներ", "Տվյալների պաշտպանություն", "Կիբեռանվտանգության համակարգեր"]
                     : language === "ru"
-                    ? ["Корпоративные сетевые технологии", "Защита данных", "Системы кибербезопасности"]
-                    : ["Corporate Network Technologies", "Data Protection", "Cybersecurity Systems"]
+                    ? ["Корпоративные сетевые решения", "Защита данных", "Решения по кибербезопасности"]
+                    : ["Enterprise Networking", "Data Protection", "Cybersecurity Solutions"]
                   ).map((item, i) => (
                     <li key={i} className="flex items-start gap-2.5 text-zinc-600">
                       <span className="mt-1.5 text-[#00c050] text-sm">›</span>
@@ -349,8 +348,8 @@ export default function SolutionsPage() {
                   {(language === "hy"
                     ? ["Տեսահսկման համակարգեր", "Մուտքի կառավարում", "Հրդեհային ազդանշանային համակարգեր", "Խելացի լուսավորություն"]
                     : language === "ru"
-                    ? ["Системы видеонаблюдения", "Управление доступом", "Пожарная сигнализация", "Умное освещение"]
-                    : ["Video Surveillance Systems", "Access Control", "Fire Alarm Systems", "Smart Lighting"]
+                    ? ["Видеонаблюдение", "Контроль доступа (СКУД)", "Пожарная сигнализация", "Умное освещение"]
+                    : ["Video Surveillance", "Access Control", "Fire Detection", "Smart Lighting Solutions"]
                   ).map((item, i) => (
                     <li key={i} className="flex items-start gap-2.5 text-zinc-600">
                       <span className="mt-1.5 text-[#00c050] text-sm">›</span>
@@ -374,14 +373,14 @@ export default function SolutionsPage() {
                     ? "Համակարգչային և տպագրական տեխնիկա"
                     : language === "ru"
                     ? "Компьютерная и печатная техника"
-                    : "Computer & Printing Equipment"}
+                    : "Computing & Printing"}
                 </h3>
                 <ul className="mt-5 space-y-2.5">
                   {(language === "hy"
-                    ? ["Բիզնես դասի համակարգիչներ և նոութբուքեր", "Աշխատանքային կայաններ (Workstations)", "Տպիչներ և սկաներներ"]
+                    ? ["Բիզնես դասի համակարգիչներ և նոութբուքեր", "Աշխատանքային կայաններ", "Տպիչներ և սկաներներ"]
                     : language === "ru"
-                    ? ["Бизнес-класс компьютеры и ноутбуки", "Рабочие станции (Workstations)", "Принтеры и сканеры"]
-                    : ["Business-class PCs & Laptops", "Workstations", "Printers & Scanners"]
+                    ? ["Компьютеры и ноутбуки для бизнеса", "Рабочие станции", "Принтеры и Сканеры"]
+                    : ["Corporate PCs & Laptops", "Workstations", "Printers & Scanners"]
                   ).map((item, i) => (
                     <li key={i} className="flex items-start gap-2.5 text-zinc-600">
                       <span className="mt-1.5 text-[#00c050] text-sm">›</span>
@@ -396,9 +395,6 @@ export default function SolutionsPage() {
 
         {/* PROJECTS SECTION */}
         <div id="projects-scroll-container" className="relative">
-          {/* Եթե ուզում ես ProjectsBackdrop3DLoader-ը էլ պահել, թող մնա, բայց հիմա ամբողջ էջի ֆոնը արդեն կա */}
-          {/* <ProjectsBackdrop3DLoader containerId="projects-scroll-container" /> */}
-
           <div className="relative z-10 px-6 md:px-20">
             <div className="mt-20 mb-10">
               <p className="mt-3 text-base md:text-lg text-zinc-900">
