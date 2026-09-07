@@ -142,7 +142,7 @@ export default function AboutPage() {
                       ? "Մեր տեսլականը"
                       : language === "ru"
                       ? "Наше видение"
-                      : "Our Vision"}
+                      : "Strategic Vision"}
                   </h3>
                   <p className="mt-4 text-base md:text-lg leading-relaxed text-zinc-600">
                     {language === "hy"
