@@ -8,9 +8,9 @@ import { clients } from "@/data/clients";
 import { useLanguage } from "@/context/LanguageContext";
 
 const AUTOPLAY_INTERVAL = 2800; // ms between auto-advances
-const ACTIVE_WIDTH = 220;
+const ACTIVE_WIDTH = 320;
 const IDLE_WIDTH = 60;
-const CARD_HEIGHT = 150;
+const CARD_HEIGHT = 250;
 
 // ================= 3D BACKGROUND MOVING BOXES (ՔԱՌԱԿՈՒՍԻՆԵՐ) =================
 function BackgroundBoxes() {

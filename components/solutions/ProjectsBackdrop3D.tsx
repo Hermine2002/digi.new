@@ -151,17 +151,7 @@ function Scene3D({ containerId }: { containerId: string }) {
 
   return (
     <group ref={rootRef}>
-      {/* {MODEL_CONFIGS.map((cfg, i) => (
-        <ModelInstance
-          key={cfg.path}
-          path={cfg.path}
-          targetSize={cfg.targetSize}
-          onRef={(obj) => {
-            obj.position.set(SLOTS[i].x, SLOTS[i].y, SLOTS[i].z);
-            modelRefs.current[i] = obj;
-          }}
-        />
-      ))} */}
+     А
     </group>
   );
 }

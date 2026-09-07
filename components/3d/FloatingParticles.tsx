@@ -1,236 +1,302 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import * as THREE from "three";
-import * as BufferGeometryUtils from "three/addons/utils/BufferGeometryUtils.js";
 
 interface FloatingParticlesProps {
   className?: string;
+  color?: string;
+  count?: number;
 }
 
-export function FloatingParticles({ className }: FloatingParticlesProps) {
+export function FloatingParticles({
+  className,
+  color = "#00c050",
+  count = 9000,
+}: FloatingParticlesProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
 
-    let renderer: THREE.WebGLRenderer;
-    let scene: THREE.Scene;
-    let camera: THREE.PerspectiveCamera;
-    let particles: THREE.Points;
-    let animationFrameId: number;
+    let renderer: any;
+    let scene: any;
+    let camera: any;
+    let points: any;
+    let animationId: number;
+    let disposed = false;
 
-    const PARTICLE_SIZE_BASE = 24;
-    const PARTICLE_SIZE_GROW = 32;
+    let handleResize: () => void = () => {};
+    let handlePointerMove: (e: PointerEvent) => void = () => {};
 
-    let mouse = { x: 0, y: 0, targetX: 0, targetY: 0, isMoving: false };
-    let lastMouseTime = Date.now();
+    (async () => {
+      const THREE = await import("three");
+      if (disposed || !container) return;
 
-    // --- INIT ---
-    scene = new THREE.Scene();
+      const width = container.clientWidth;
+      const height = container.clientHeight;
 
-    camera = new THREE.PerspectiveCamera(
-      45,
-      container.clientWidth / container.clientHeight,
-      1,
-      10000
-    );
-    camera.position.z = 250;
+      // ---------- Scene setup ----------
+      scene = new THREE.Scene();
+      camera = new THREE.PerspectiveCamera(50, width / height, 0.1, 200);
+      camera.position.set(0, 0, 34);
 
-    // --- ՊԱՐՏԻԿՆԵՐՈՎ ՀԱՎԱՔՎԱԾ ՄՈԴԵԼ ---
-    const boxGeo = new THREE.BoxGeometry(100, 100, 100, 14, 14, 14);
-    boxGeo.deleteAttribute("normal");
-    boxGeo.deleteAttribute("uv");
-    
-    let mergedGeo = BufferGeometryUtils.mergeVertices(boxGeo);
-    const geometry = Object.assign(mergedGeo, {
-      parameters: boxGeo.parameters,
-    });
+      renderer = new THREE.WebGLRenderer({
+        antialias: true,
+        alpha: true,
+        powerPreference: "high-performance",
+      });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setSize(width, height);
+      renderer.setClearColor(0x000000, 0);
+      container.appendChild(renderer.domElement);
+      renderer.domElement.style.width = "100%";
+      renderer.domElement.style.height = "100%";
+      renderer.domElement.style.display = "block";
 
-    const positionAttribute = geometry.getAttribute("position");
-    const particleCount = positionAttribute.count;
-
-    // Հիշում ենք սկզբնական դիրքերը
-    const originalPositions = new Float32Array(positionAttribute.array.length);
-    originalPositions.set(positionAttribute.array);
-
-    // Ստեղծում ենք ուղղությունների/արագությունների զանգված ցրման համար
-    const velocities = new Float32Array(particleCount * 3);
-    for (let i = 0; i < particleCount * 3; i++) {
-      velocities[i] = (Math.random() - 0.5) * 15;
-    }
-
-    const colors = new Float32Array(particleCount * 3);
-    const sizes = new Float32Array(particleCount);
-    const color = new THREE.Color();
-
-    for (let i = 0; i < particleCount; i++) {
-      color.setHSL(0.35, 0.8, 0.35);
-      color.toArray(colors, i * 3);
-      sizes[i] = PARTICLE_SIZE_BASE;
-    }
-
-    geometry.setAttribute("customColor", new THREE.BufferAttribute(colors, 3));
-    geometry.setAttribute("size", new THREE.BufferAttribute(sizes, 1).setUsage(THREE.DynamicDrawUsage));
-
-    // --- SHADERS ---
-    const vertexShader = `
-      attribute float size;
-      attribute vec3 customColor;
-      varying vec3 vColor;
-      uniform float scale;
-
-      void main() {
-        vColor = customColor;
-        vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-        gl_PointSize = size * ( scale / -mvPosition.z );
-        gl_Position = projectionMatrix * mvPosition;
+      // ---------- Seeded value noise (deterministic curl field) ----------
+      const perm = new Uint8Array(512);
+      const base = new Uint8Array(256);
+      for (let i = 0; i < 256; i++) base[i] = i;
+      let seed = 7919;
+      const rand = () => {
+        seed = (seed * 16807) % 2147483647;
+        return (seed - 1) / 2147483646;
+      };
+      for (let i = 255; i > 0; i--) {
+        const j = Math.floor(rand() * (i + 1));
+        const tmp = base[i];
+        base[i] = base[j];
+        base[j] = tmp;
       }
-    `;
+      for (let i = 0; i < 512; i++) perm[i] = base[i & 255];
 
-    const fragmentShader = `
-      uniform vec3 color;
-      varying vec3 vColor;
+      const fade = (x: number) => x * x * x * (x * (x * 6 - 15) + 10);
+      const lerp = (t: number, a: number, b: number) => a + t * (b - a);
+      const grad = (hash: number, x: number, y: number, z: number) => {
+        const h = hash & 15;
+        const u = h < 8 ? x : y;
+        const v = h < 4 ? y : h === 12 || h === 14 ? x : z;
+        return ((h & 1) === 0 ? u : -u) + ((h & 2) === 0 ? v : -v);
+      };
+      const noise3 = (x: number, y: number, z: number) => {
+        const X = Math.floor(x) & 255;
+        const Y = Math.floor(y) & 255;
+        const Z = Math.floor(z) & 255;
+        x -= Math.floor(x);
+        y -= Math.floor(y);
+        z -= Math.floor(z);
+        const u = fade(x);
+        const v = fade(y);
+        const w = fade(z);
+        const A = perm[X] + Y;
+        const AA = perm[A] + Z;
+        const AB = perm[A + 1] + Z;
+        const B = perm[X + 1] + Y;
+        const BA = perm[B] + Z;
+        const BB = perm[B + 1] + Z;
+        return lerp(
+          w,
+          lerp(
+            v,
+            lerp(u, grad(perm[AA], x, y, z), grad(perm[BA], x - 1, y, z)),
+            lerp(u, grad(perm[AB], x, y - 1, z), grad(perm[BB], x - 1, y - 1, z))
+          ),
+          lerp(
+            v,
+            lerp(u, grad(perm[AA + 1], x, y, z - 1), grad(perm[BA + 1], x - 1, y, z - 1)),
+            lerp(u, grad(perm[AB + 1], x, y - 1, z - 1), grad(perm[BB + 1], x - 1, y - 1, z - 1))
+          )
+        );
+      };
 
-      void main() {
-        vec2 uv = gl_PointCoord.xy - vec2(0.5);
-        float dist = length(uv);
-        if (dist > 0.5) discard;
+      const EPS = 0.6;
+      const curl = (x: number, y: number, z: number, t: number, out: any) => {
+        const n1 = noise3(x, y + EPS, z + t);
+        const n2 = noise3(x, y - EPS, z + t);
+        const a = (n1 - n2) / (2 * EPS);
 
-        float alpha = 1.0 - smoothstep(0.35, 0.5, dist);
-        gl_FragColor = vec4( color * vColor, alpha * 0.9 );
-        
-        if (gl_FragColor.a < 0.01) discard;
-      }
-    `;
+        const n3 = noise3(x, y, z + EPS + t);
+        const n4 = noise3(x, y, z - EPS + t);
+        const b = (n3 - n4) / (2 * EPS);
 
-    const material = new THREE.ShaderMaterial({
-      uniforms: {
-        color: { value: new THREE.Color(0x00c050) },
-        scale: { value: window.innerHeight * 0.5 },
-      },
-      vertexShader,
-      fragmentShader,
-      transparent: true,
-      depthTest: true,
-      depthWrite: false,
-    });
+        const n5 = noise3(x + EPS, y, z + t);
+        const n6 = noise3(x - EPS, y, z + t);
+        const c = (n5 - n6) / (2 * EPS);
 
-    particles = new THREE.Points(geometry, material);
-    
-    // Դիրքը ըստ քո պահանջի
-    particles.position.x = 90;
-    particles.position.y = -30;
-    particles.position.z = 1;
+        const n7 = noise3(x, y + EPS, z + t + 5.2);
+        const n8 = noise3(x, y - EPS, z + t + 5.2);
+        const d = (n7 - n8) / (2 * EPS);
 
-    scene.add(particles);
+        const n9 = noise3(x + EPS, y, z + t + 9.1);
+        const n10 = noise3(x - EPS, y, z + t + 9.1);
+        const e = (n9 - n10) / (2 * EPS);
 
-    renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    renderer.setSize(container.clientWidth, container.clientHeight);
-    container.appendChild(renderer.domElement);
+        const n11 = noise3(x, y, z + EPS + t + 3.7);
+        const n12 = noise3(x, y, z - EPS + t + 3.7);
+        const f = (n11 - n12) / (2 * EPS);
 
-    // --- MOUSE TRACKING ---
-    const onPointerMove = (event: MouseEvent) => {
-      const rect = container.getBoundingClientRect();
-      const x = ((event.clientX - rect.left) / container.clientWidth) * 2 - 1;
-      const y = -((event.clientY - rect.top) / container.clientHeight) * 2 + 1;
+        out.x = a - f;
+        out.y = b - c;
+        out.z = d - e;
+        return out;
+      };
 
-      mouse.targetX = x;
-      mouse.targetY = y;
-      mouse.isMoving = true;
-      lastMouseTime = Date.now();
-    };
+      // ---------- Particles ----------
+      const RADIUS = 15;
+      const positions = new Float32Array(count * 3);
+      const origins = new Float32Array(count * 3);
+      const speeds = new Float32Array(count);
+      const sizes = new Float32Array(count);
 
-    container.addEventListener("pointermove", onPointerMove);
-
-    const handleResize = () => {
-      if (!container) return;
-      camera.aspect = container.clientWidth / container.clientHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(container.clientWidth, container.clientHeight);
-      material.uniforms.scale.value = window.innerHeight * 0.5;
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    // --- ANIMATION LOOP ---
-    const animate = () => {
-      animationFrameId = requestAnimationFrame(animate);
-
-      // Ստուգում ենք՝ արդյոք մկնիկը շարժվում է, թե կանգնել է
-      if (Date.now() - lastMouseTime > 200) {
-        mouse.isMoving = false;
+      for (let i = 0; i < count; i++) {
+        const r = RADIUS * Math.pow(Math.random(), 0.5);
+        const theta = Math.random() * Math.PI * 2;
+        const phi = Math.acos(2 * Math.random() - 1);
+        const x = r * Math.sin(phi) * Math.cos(theta);
+        const y = r * Math.sin(phi) * Math.sin(theta);
+        const z = r * Math.cos(phi);
+        positions[i * 3] = x;
+        positions[i * 3 + 1] = y;
+        positions[i * 3 + 2] = z;
+        origins[i * 3] = x;
+        origins[i * 3 + 1] = y;
+        origins[i * 3 + 2] = z;
+        speeds[i] = 0.3 + Math.random() * 0.9;
+        sizes[i] = 0.5 + Math.random() * 1.4;
       }
 
-      // Մկնիկի հարթ անցում
-      mouse.x += (mouse.targetX - mouse.x) * 0.1;
-      mouse.y += (mouse.targetY - mouse.y) * 0.1;
+      const geometry = new THREE.BufferGeometry();
+      geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+      geometry.setAttribute("aSize", new THREE.BufferAttribute(sizes, 1));
 
-      // Տեղական պտույտ
-      particles.rotation.x += 0.003;
-      particles.rotation.y += 0.005;
+      const baseColor = new THREE.Color(color);
 
-      const posAttr = geometry.getAttribute("position");
-      const posArray = posAttr.array as Float32Array;
-
-      // Մկնիկի ազդեցության ուժը կախված շարժումից
-      const scatterFactor = mouse.isMoving ? 1.4 : 0.0;
-
-      for (let i = 0; i < particleCount; i++) {
-        const i3 = i * 3;
-
-        const origX = originalPositions[i3];
-        const origY = originalPositions[i3 + 1];
-        const origZ = originalPositions[i3 + 2];
-
-        if (mouse.isMoving) {
-          // Մկնիկը շարժելիս պարտիկները պայթում/ցրվում են ամբողջ էկրանով՝ օգտագործելով իրենց velocities-ները
-          const speed = 2.5;
-          posArray[i3]     += velocities[i3] * speed * scatterFactor;
-          posArray[i3 + 1] += velocities[i3 + 1] * speed * scatterFactor;
-          posArray[i3 + 2] += velocities[i3 + 2] * speed * scatterFactor;
-
-          // Սահմանափակում ենք, որ չափից շատ չհեռանան
-          const maxDist = 300;
-          const currentDist = Math.sqrt(
-            Math.pow(posArray[i3] - origX, 2) +
-            Math.pow(posArray[i3 + 1] - origY, 2) +
-            Math.pow(posArray[i3 + 2] - origZ, 2)
-          );
-          if (currentDist > maxDist) {
-            posArray[i3] = origX + (posArray[i3] - origX) * 0.9;
-            posArray[i3 + 1] = origY + (posArray[i3 + 1] - origY) * 0.9;
-            posArray[i3 + 2] = origZ + (posArray[i3 + 2] - origZ) * 0.9;
+      const material = new THREE.ShaderMaterial({
+        transparent: true,
+        depthWrite: false,
+        blending: THREE.NormalBlending,
+        uniforms: {
+          uColor: { value: baseColor },
+          uPixelRatio: { value: Math.min(window.devicePixelRatio, 2) },
+        },
+        vertexShader: `
+          attribute float aSize;
+          varying float vDist;
+          uniform float uPixelRatio;
+          void main() {
+            vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+            vDist = -mvPosition.z;
+            gl_PointSize = aSize * uPixelRatio * (90.0 / max(vDist, 1.0));
+            gl_Position = projectionMatrix * mvPosition;
           }
-        } else {
-          // Մկնիկը կանգնելիս կամ հեռանալիս պարտիկները հարթ վերադառնում են իրենց սկզբնական տեղերը (հավաքվում են)
-          posArray[i3]     += (origX - posArray[i3])     * 0.07;
-          posArray[i3 + 1] += (origY - posArray[i3 + 1]) * 0.07;
-          posArray[i3 + 2] += (origZ - posArray[i3 + 2]) * 0.07;
+        `,
+        fragmentShader: `
+          varying float vDist;
+          uniform vec3 uColor;
+          void main() {
+            vec2 c = gl_PointCoord - vec2(0.5);
+            float d = length(c);
+            if (d > 0.5) discard;
+            float alpha = smoothstep(0.5, 0.0, d);
+            float depthFade = clamp(1.0 - (vDist - 18.0) / 40.0, 0.35, 1.0);
+            gl_FragColor = vec4(uColor, alpha * 0.55 * depthFade);
+          }
+        `,
+      });
+
+      points = new THREE.Points(geometry, material);
+      scene.add(points);
+
+      // ---------- Interaction: gentle parallax on pointer ----------
+      let targetRotX = 0;
+      let targetRotY = 0;
+      let rotX = 0;
+      let rotY = 0;
+
+      handlePointerMove = (e: PointerEvent) => {
+        const rect = container.getBoundingClientRect();
+        const nx = (e.clientX - rect.left) / rect.width - 0.5;
+        const ny = (e.clientY - rect.top) / rect.height - 0.5;
+        targetRotY = nx * 0.35;
+        targetRotX = ny * 0.2;
+      };
+      window.addEventListener("pointermove", handlePointerMove);
+
+      // ---------- Resize ----------
+      handleResize = () => {
+        if (!container || !renderer || !camera) return;
+        const w = container.clientWidth;
+        const h = container.clientHeight;
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+        renderer.setSize(w, h);
+      };
+      window.addEventListener("resize", handleResize);
+
+      // ---------- Animate ----------
+      const clock = new THREE.Clock();
+      const flow = { x: 0, y: 0, z: 0 };
+
+      const animate = () => {
+        if (disposed) return;
+        animationId = requestAnimationFrame(animate);
+        const dt = Math.min(clock.getDelta(), 0.05);
+        const t = clock.elapsedTime;
+
+        rotX += (targetRotX - rotX) * 0.04;
+        rotY += (targetRotY - rotY) * 0.04;
+        points.rotation.x = rotX;
+        points.rotation.y = rotY + t * 0.015;
+
+        const posAttr = geometry.attributes.position;
+        const arr = posAttr.array as Float32Array;
+        const noiseScale = 0.055;
+        const timeScale = 0.05;
+
+        for (let i = 0; i < count; i++) {
+          const ix = i * 3;
+          const iy = ix + 1;
+          const iz = ix + 2;
+          const x = arr[ix];
+          const y = arr[iy];
+          const z = arr[iz];
+
+          curl(x * noiseScale, y * noiseScale, z * noiseScale, t * timeScale, flow);
+          const spd = speeds[i];
+
+          arr[ix] += flow.x * spd * dt * 4.5;
+          arr[iy] += flow.y * spd * dt * 4.5;
+          arr[iz] += flow.z * spd * dt * 4.5;
+
+          arr[ix] += (origins[ix] - arr[ix]) * 0.006;
+          arr[iy] += (origins[iy] - arr[iy]) * 0.006;
+          arr[iz] += (origins[iz] - arr[iz]) * 0.006;
         }
-      }
+        posAttr.needsUpdate = true;
 
-      posAttr.needsUpdate = true;
-      renderer.render(scene, camera);
-    };
-
-    animate();
+        renderer.render(scene, camera);
+      };
+      animate();
+    })();
 
     return () => {
-      container.removeEventListener("pointermove", onPointerMove);
+      disposed = true;
+      cancelAnimationFrame(animationId);
       window.removeEventListener("resize", handleResize);
-      cancelAnimationFrame(animationFrameId);
-
-      geometry.dispose();
-      material.dispose();
-      if (renderer.domElement && container.contains(renderer.domElement)) {
-        container.removeChild(renderer.domElement);
+      window.removeEventListener("pointermove", handlePointerMove);
+      if (renderer) {
+        renderer.dispose();
+        if (renderer.domElement && renderer.domElement.parentNode === container) {
+          container.removeChild(renderer.domElement);
+        }
       }
-      renderer.dispose();
+      if (points) {
+        points.geometry.dispose();
+        (points.material as any).dispose();
+      }
     };
-  }, []);
+  }, [color, count]);
 
-  return <div ref={containerRef} className={className} style={{ width: '100%', height: '100%' }} />;
+  return <div ref={containerRef} className={className} />;
 }

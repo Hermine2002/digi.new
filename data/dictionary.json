@@ -17,12 +17,12 @@
     },
     "partnership": {
       "hy": "Գործընկերներ",
-      "en": "Customers",
-      "ru": "партнеры"
+      "en": "Partnership",
+      "ru": "Партнеры"
     },
     "customers": {
       "hy": "հաճախորդներ",
-      "en": "Partnership",
+      "en": "Customers",
       "ru": "Клиенты"
     },
     "contact": {
@@ -43,19 +43,19 @@
   "ru": "Ведущая компания в области ИТ-инфраструктуры и системной интеграции"
 },
 "badgeSubTilile": {
-  "hy": "ՏՏ գործընկերը",
-  "en": "IT Partner",
-  "ru": "ИТ-партнёр"
+  "hy": "հուսալի հենարանը",
+  "en": "Growth and Security",
+  "ru": "роста и безопасности"
 },
 "title": {
-  "hy": "Դիջիբեյս — Ձեր վստահելի ",
-  "en": "DigiBase — Your Trusted ",
-  "ru": "DigiBase — Ваш надёжный "
+  "hy": "Ձեր տեխնոլոգիական աճի ու անվտանգության",
+  "en": "Your Reliable Foundation for Technological",
+  "ru": "Ваша надежная опора для технологического"
 },
 "description": {
-  "hy": "DigiBase-ը ապահովում է պետական և կորպորատիվ հատվածների ՏՏ ենթակառուցվածքների հուսալիությունն ու պաշտպանվածությունը։",
-  "en": "DigiBase ensures the reliability and protection of IT infrastructure for government and corporate sectors.",
-  "ru": "DigiBase обеспечивает надежность и защиту ИТ-инфраструктуры государственного и корпоративного секторов."
+  "hy": "ՏՏ ենթակառուցվածքների և կիբեռանվտանգության առաջատար ինտեգրատոր տարածաշրջանում․ համաշխարհային տեխնոլոգիաներ՝ Ձեր բիզնեսի համար։",
+  "en": "The leading IT infrastructure and cybersecurity integrator in the region — world-class technologies for your business.",
+  "ru": "Ведущий интегратор ИТ-инфраструктуры и кибербезопасности в регионе: мировые технологии для вашего бизнеса.F"
 },
     "ctaPrimary": {
       "hy": "Սկսել համագործակցությունը",
@@ -370,26 +370,90 @@
     "en": "Over the years we have successfully delivered numerous projects in the banking, public, education and corporate sectors. The foundation of our continuous growth is client trust, strategic partnerships with the world’s leading technology brands, and our commitment to solutions that create long-term value.",
     "ru": "За годы работы мы успешно реализовали множество проектов в банковском, государственном, образовательном и корпоративном секторах. Основой нашего непрерывного роста является доверие клиентов, стратегическое партнёрство с ведущими мировыми технологическими брендами и стремление создавать решения, приносящие долгосрочную ценность."
   },
-  "teamTitle": {
-    "hy": "Թիմը՝ յուրաքանչյուր հաջողության թիկունքում",
-    "en": "The Team Behind Every Success",
-    "ru": "Команда — основа каждого успеха"
-  },
-  "teamText1": {
-    "hy": "Մեր թիմի ուժեղ կողմը մասնագիտական բարձր որակավորումը, արագ աճն ու շարունակական զարգացումն են։\n\nՅուրաքանչյուր հաջողված նախագիծ սկսվում է նվիրված թիմից։ DigiBase-ը համախմբում է բարձր որակավորում ունեցող ինժեներների, համակարգային ճարտարապետների, պրոյեկտ մենեջերների և տեխնիկական խորհրդատուների, որոնց միավորում է մեկ ընդհանուր նպատակ՝ թիմային աշխատանքի ու փորձառության շնորհիվ ապահովել բացառիկ արդյունք։",
-    "en": "The strength of our team lies in high professional qualifications, rapid growth and continuous development.\n\nEvery successful project starts with a dedicated team. DigiBase brings together highly qualified engineers, systems architects, project managers and technical consultants united by one common goal: delivering exceptional results through teamwork and expertise.",
-    "ru": "Сила нашей команды — в высокой профессиональной квалификации, быстром росте и непрерывном развитии.\n\nКаждый успешный проект начинается с преданной делу команды. DigiBase объединяет высококвалифицированных инженеров, системных архитекторов, проджект-менеджеров и технических консультантов, сплочённых единой целью — обеспечивать исключительный результат благодаря командной работе и опыту."
-  },
-  "teamText2": {
-    "hy": "Մենք խրախուսում ենք շարունակական ուսուցման, գիտելիքների փոխանակման և մասնագիտական աճի մշակույթը, ինչը թույլ է տալիս մեր թիմին միշտ քայլել տեխնոլոգիական միտումներին ու միջազգային ստանդարտներին համընթաց։",
-    "en": "We foster a culture of continuous learning, knowledge sharing and professional growth. This allows our team to always stay aligned with technology trends and international standards.",
-    "ru": "Мы развиваем культуру непрерывного обучения, обмена знаниями и профессионального роста, что позволяет нашей команде всегда идти в ногу с технологическими трендами и международными стандартами."
-  },
-  "experienceTitle": {
-    "hy": "Մեր թիմի փորձը",
-    "en": "Our Team’s Expertise",
-    "ru": "Опыт нашей команды"
-  },
+"teamTitle": {
+  "hy": "ՄԵՐ ԹԻՄԻ ՓՈՐՁԸ",
+  "en": "OUR TEAM’S EXPERIENCE",
+  "ru": "Ключевые компетенции нашей команды"
+},
+"teamIntro": {
+  "hy": "Մեր թիմի ուժեղ կողմը մասնագիտական բարձր որակավորումը, արագ աճն ու շարունակական զարգացումն են։",
+  "en": "The strength of our team lies in high professional qualifications, rapid growth and continuous development.",
+  "ru": "Сила нашей команды — в высокой профессиональной квалификации, быстром росте и непрерывном развитии."
+},
+"teamIndustriesTitle": {
+  "hy": "Ոլորտներ, որտեղ ունենք խորը փորձ․",
+  "en": "Industries where we have deep expertise:",
+  "ru": "Отрасли, в которых у нас есть глубокий опыт:"
+},
+"teamIndustries": {
+  "hy": [
+    "Բանկեր և ֆինանսներ",
+    "Մանրածախ առևտուր",
+    "Տեղեկատվական տեխնոլոգիաներ",
+    "Պետական կառույցներ"
+  ],
+  "en": [
+    "Banking & Finance",
+    "Retail",
+    "Information Technology",
+    "Government sector"
+  ],
+  "ru": [
+    "Банки и финансы",
+    "Розничная торговля",
+    "Информационные технологии",
+    "Государственный сектор"
+  ]
+},
+"teamAdvantagesTitle": {
+  "hy": "Մեր հիմնական առավելությունները․",
+  "en": "Our key advantages:",
+  "ru": "Наши ключевые преимущества:"
+},
+"teamAdvantages": {
+  "hy": [
+    {
+      "title": "Գործընթացների խորը ընկալում",
+      "text": "Գիտենք՝ ինչպես են աշխատում բիզնես պրոցեսները և ինչպես դրանք դարձնել ավելի արդյունավետ։"
+    },
+    {
+      "title": "Շուկայի խորացված իմացություն",
+      "text": "Գերազանց ճանաչում ենք ԱՊՀ շուկան և ճիշտ կառավարում հաճախորդների հետ հարաբերությունները։"
+    },
+    {
+      "title": "Ամուր գործընկերություն",
+      "text": "Կարողանում ենք գտնել ճիշտ լուծումներ և կառուցել երկարատև, հուսալի կապեր։"
+    }
+  ],
+  "en": [
+    {
+      "title": "Deep process understanding",
+      "text": "We know how business processes work and how to make them more efficient."
+    },
+    {
+      "title": "Deep market knowledge",
+      "text": "We have excellent knowledge of the CIS market and manage client relationships correctly."
+    },
+    {
+      "title": "Strong partnerships",
+      "text": "We find the right solutions and build long-term, reliable relationships."
+    }
+  ],
+  "ru": [
+    {
+      "title": "Глубокое понимание процессов",
+      "text": "Мы знаем, как работают бизнес-процессы и как сделать их более эффективными."
+    },
+    {
+      "title": "Углублённое знание рынка",
+      "text": "Отлично знаем рынок СНГ и правильно выстраиваем отношения с клиентами."
+    },
+    {
+      "title": "Надёжное партнёрство",
+      "text": "Умеем находить правильные решения и строить долгосрочные, надёжные связи."
+    }
+  ]
+},
   "sectorsTitle": {
     "hy": "Ոլորտներ, որտեղ ունենք խորը փորձ",
     "en": "Sectors where we have deep expertise",
@@ -585,19 +649,19 @@
       "ru": "КЛИЕНТЫ"
     },
     "title": {
-      "hy": "Գործընկերություն՝ հիմնված",
-      "en": "Partnerships Built on",
-      "ru": "Партнерство, основанное на"
+      "hy": "Մեզ ",
+      "en": "Trusted by  ",
+      "ru": "Нам "
     },
     "trust": {
-      "hy": "վստահության վրա",
-      "en": "Trust",
-      "ru": "доверии"
+      "hy": "վստահում են",
+      "en": "Industry Leaders",
+      "ru": "доверяют"
     },
     "description1": {
       "hy": "Մենք հպարտ ենք համագործակցել տարածաշրջանի առաջատար բանկերի, պետական կառույցների և տեխնոլոգիական հսկաների հետ:",
       "en": "We are proud to collaborate with leading banks, public institutions, and technology leaders across the region.",
-      "ru": "Мы работаем с ведущими мировыми IT-производителями, чтобы предоставлять вам лучшие и самые надежные решения."
+      "ru": "Мы гордимся сотрудничеством с ведущими банками, государственными структурами и технологическими гигантами региона."
     },
     "description2": {
       "hy": "Մեր հաճախորդների թվում են ֆինանսական հաստատություններ, պետական կառույցներ, կրթական կենտրոններ, ինչպես նաև խոշոր կորպորացիաներ։ Նրանցից յուրաքանչյուրն ունի յուրահատուկ մարտահրավերներ և որակի բարձր պահանջներ։",
@@ -653,9 +717,9 @@
       "ru": "Наши"
     },
     "clientsSubtitle": {
-      "hy": "գործընկերը",
-      "en": "partners",
-      "ru": "партнеры"
+      "hy": "Հաճախորդներ",
+      "en": "Customers",
+      "ru": "Клиенты"
     },
     "clientsDescription": {
       "hy": "",
@@ -806,14 +870,14 @@
       "ru": "Партнерство"
     },
   "title1": {
-  "hy": "Մեզ վստահում են",
-  "en": "They Trust Us",
-  "ru": "Нам доверяют"
+  "hy": "Գործընկերություն՝ հիմնված ",
+  "en": "Partnerships Built",
+  "ru": "Партнерство, основанное "
 },
 "title2": {
-  "hy": "",
-  "en": "",
-  "ru": ""
+  "hy": "վստահության վրա",
+  "en": " on Trust",
+  "ru": "на доверии"
 },
 "description": {
   "hy": "Մենք հպարտ ենք համագործակցել տարածաշրջանի առաջատար բանկերի, պետական կառույցների և տեխնոլոգիական հսկաների հետ:",
@@ -869,9 +933,9 @@
       "ru": "Наши"
     },
     "expTitle2": {
-      "en": "Customers",
-      "hy": "Մատակարարները",
-      "ru": "Поставщики"
+      "en": "partners",
+      "hy": "գործընկերները",
+      "ru": "партнеры"
     }
   },
   "solutions": {
@@ -881,19 +945,19 @@
       "ru": "Решения и Проекты"
     },
     "title1": {
-      "en": "Our Solutions",
-      "hy": "Մեր Նախագծերը",
-      "ru": "Наша Решения"
+      "en": "TECHNOLOGY SOLUTIONS FOR DIGITAL ",
+      "hy": "ՏԵԽՆՈԼՈԳԻԱԿԱՆ ԼՈՒԾՈՒՄՆԵՐ ԲԻԶՆԵՍԻ ԹՎԱՅԻՆ ",
+      "ru": "ТЕХНОЛОГИЧЕСКИЕ РЕШЕНИЯ ДЛЯ ЦИФРОВОЙ "
     },
     "title2": {
-      "en": "",
-      "hy": "",
-      "ru": ""
+      "en": "BUSINESS TRANSFORMATION",
+      "hy": "ՏՐԱՆՍՖՈՐՄԱՑԻԱՅԻ ՀԱՄԱՐ",
+      "ru": "ТРАНСФОРМАЦИИ БИЗНЕСА"
     },
     "description1": {
-      "en": "We design and implement technology solutions that guarantee the seamless operation and digital evolution of critical enterprise systems.",
-      "hy": "Մենք նախագծում և ներդնում ենք տեխնոլոգիական լուծումներ, որոնք ապահովում են կազմակերպությունների կարևորագույն համակարգերի անխափանությունն ու թվային զարգացումը։",
-      "ru": "Мы проектируем и внедряем технологические решения, которые обеспечивают бесперебойную работу критически важных систем и цифровое развитие организаций."
+      "en": "We design, implement, and maintain state-of-the-art IT and security infrastructures. Our end-to-end solutions ensure smooth business operations, data protection, and continuous technological growth.",
+      "hy": "Մենք նախագծում, ներդնում և սպասարկում ենք ժամանակակից ՏՏ և անվտանգության ենթակառուցվածքներ: Մեր համալիր լուծումներն ապահովում են Ձեր բիզնեսի անխափան աշխատանքը, տվյալների պաշտպանվածությունը և տեխնոլոգիական աճը:",
+      "ru": "Мы проектируем, внедряем и обслуживаем современные ИТ-инфраструктуры и системы безопасности. Наши комплексные решения обеспечивают бесперебойную работу вашего бизнеса, надежную защиту данных и постоянный технологический рост.."
     },
     "description2": {
       "en": "Explore DigiBase’s featured implementations, which showcase our engineering capabilities and our ability to deliver precise solutions to complex technical challenges.",

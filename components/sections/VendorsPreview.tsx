@@ -317,13 +317,13 @@ export function VendorsPreview() {
       <div className="absolute top-0 left-1/2 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-emerald-200/20 blur-[120px]" />
 
       {/* 3D NEURAL CANVAS */}
-      <NeuralCanvas />
+      {/* <NeuralCanvas /> */}
 
       <div className="w-full px-4 sm:px-6 lg:px-12 relative z-10">
         {/* HEADER */}
         <BlurReveal>
           <div className="mx-auto max-w-4xl text-center">
-            <span className="eyebrow">{vp.eyebrow[language]}</span>
+            {/* <span className="eyebrow">{vp.eyebrow[language]}</span> */}
             <h2 className="mt-5 text-4xl font-bold tracking-tight text-black md:text-6xl ">
               {vp.mainTitle[language]}
             </h2>
@@ -361,94 +361,14 @@ export function VendorsPreview() {
         {/* PARTNER TITLE */}
         <BlurReveal delay={0.2}>
           <div className="mt-28 text-center">
-            <span className="eyebrow text-bleck font-bold">{vp.partnersTitle[language]}</span>
+            {/* <span className="eyebrow text-bleck font-bold">{vp.partnersTitle[language]}</span> */}
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-bleck font-bold">
               {vp.partnersDescription[language]}
             </p>
           </div>
         </BlurReveal>
 
-        {/* FULL WIDTH CAROUSEL CONTAINER */}
-        <BlurReveal delay={0.3}>
-          <div
-            className="relative mt-16 flex flex-col items-center justify-center py-10 w-full overflow-hidden bg-white"
-            onMouseEnter={() => setPaused(true)}
-            onMouseLeave={() => setPaused(false)}
-            onTouchStart={() => setPaused(true)}
-            onTouchEnd={() => setPaused(false)}
-          >
-            {/* Carousel Wrapper */}
-            <div 
-              className="relative w-full max-w-4xl flex justify-center items-center py-12 overflow-visible"
-              style={{ perspective: "1200px" }}
-            >
-              {/* Slides Container */}
-              <div className="relative flex items-center justify-center w-full h-[360px]">
-                {vendors.map((vendor, i) => {
-                  const distance = i - currentIndex;
-                  const isActive = distance === 0;
 
-                  let xOffset = distance * OFFSET_X;
-                  if (distance > 0) xOffset = (CARD_WIDTH / 2) + (distance - 1) * OFFSET_X;
-                  if (distance < 0) xOffset = -(CARD_WIDTH / 2) + (distance + 1) * OFFSET_X;
-
-                  const rotateY = distance < 0 ? 50 : distance > 0 ? -50 : 0;
-                  const scale = isActive ? 1 : 0.85;
-                  const opacity = Math.abs(distance) > 4 ? 0 : 1 - Math.abs(distance) * 0.18;
-
-                  return (
-                    <FloatingVendorCard
-                      key={vendor.name}
-                      vendor={vendor}
-                      isActive={isActive}
-                      distance={distance}
-                      xOffset={xOffset}
-                      rotateY={rotateY}
-                      scale={scale}
-                      opacity={opacity}
-                      onClick={() => toSlide(i)}
-                      onAnimationStart={() => setIsAnimating(true)}
-                      onAnimationComplete={() => setIsAnimating(false)}
-                    />
-                  );
-                })}
-              </div>
-
-              {/* Active Slide Frame Highlight */}
-              <motion.div
-                key={currentIndex}
-                className="absolute inset-0 m-auto h-[356px] border-2 border-emerald-500/60 rounded-[28px] pointer-events-none z-50"
-                style={{ width: CARD_WIDTH + 16, boxSizing: "content-box" }}
-                animate={{ scale: [1, 1.04, 1] }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-              />
-            </div>
-
-            {/* CONTROLS */}
-            <div className="mt-10 flex items-center gap-4 justify-center text-neutral-700 rounded-full bg-white/80 backdrop-blur-md px-4 py-2 border border-zinc-200 shadow-lg z-50">
-              <button onClick={prev} className="p-2 cursor-pointer transition hover:text-emerald-600">
-                <ArrowLeft className="h-5 w-5" />
-              </button>
-
-              <div className="w-[180px] flex justify-center items-center gap-2">
-                {vendors.map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => toSlide(i)}
-                    aria-label={`Go to slide ${i + 1}`}
-                    className={`rounded-full cursor-pointer h-2 transition-all duration-300 ${
-                      currentIndex === i ? "w-8 bg-emerald-500" : "w-2 bg-zinc-300"
-                    }`}
-                  />
-                ))}
-              </div>
-
-              <button onClick={next} className="p-2 cursor-pointer transition hover:text-emerald-600">
-                <ArrowRight className="h-5 w-5" />
-              </button>
-            </div>
-          </div>
-        </BlurReveal>
       </div>
     </section>
   );

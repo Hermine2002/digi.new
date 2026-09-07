@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { BlurReveal } from "@/components/ui/TextReveal";
 import { useLanguage } from "@/context/LanguageContext";
 import { partners } from "@/data/partners"; // <-- expects [{ name, logo }]
+import { LODField } from "../3d/Lodfield ";
 
 const AUTOPLAY_INTERVAL = 2800;
 const CARD_WIDTH = 150; // px, logo card width (aspect-square)
@@ -97,10 +98,10 @@ function PartnerLogosTilted() {
 
       {/* Below the stack: description, controls */}
       <div className="flex flex-col items-center gap-3 pt-2">
-        <p className="max-w-[320px] text-center text-xs leading-5 text-zinc-400">
+        {/* <p className="max-w-[320px] text-center text-xs leading-5 text-zinc-400">
           {pe?.description?.[language] ||
             "Global vendors supporting enterprise infrastructure, cloud, security and data center solutions."}
-        </p>
+        </p> */}
 
         <div className="flex items-center gap-3 px-3 py-1.5 rounded-full bg-zinc-100/80 border border-zinc-200/80">
           <button
@@ -138,27 +139,81 @@ function PartnerLogosTilted() {
 }
 
 // ================= MAIN COMPONENT =================
+// export function PartnersPreview() {
+//   return (
+//     <section className="relative overflow-hidden py-28 md:py-36 bg-white p-10">
+//       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white via-zinc-50 to-white" />
+//       <div className="absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-[#00c050]/10 blur-[120px]" />
+
+//       <div className="container-x">
+//         {/* Տեքստային հատված - վերևում, ամբողջ լայնությամբ */}
+//         <BlurReveal>
+//           <div className="max-w-2xl mx-auto text-center">
+//             <span className="text-xs font-semibold uppercase tracking-widest text-[#00c050]">
+//               Partnership
+//             </span>
+
+//             <h2 className="mt-5 text-4xl font-bold tracking-tight text-black md:text-6xl">
+//               Our <span className="text-[#00c050]">Partners</span>
+//             </h2>
+
+//             <p className="mt-7 text-lg leading-8 text-zinc-600">
+//               We partner with global IT leaders to deliver secure, cutting-edge
+//               solutions for your business.
+//             </p>
+//           </div>
+//         </BlurReveal>
+
+//         {/* Logo-ների tilted carousel - ներքևի հատված, կենտրոնացված */}
+//         <div className="mt-16 md:mt-20 flex justify-center">
+//           <PartnerLogosTilted />
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 export function PartnersPreview() {
+  const { language } = useLanguage();
+
   return (
     <section className="relative overflow-hidden py-28 md:py-36 bg-white p-10">
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white via-zinc-50 to-white" />
       <div className="absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-[#00c050]/10 blur-[120px]" />
-
+    <LODField/>
       <div className="container-x">
         {/* Տեքստային հատված - վերևում, ամբողջ լայնությամբ */}
         <BlurReveal>
           <div className="max-w-2xl mx-auto text-center">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#00c050]">
-              Partnership
+              {language === "hy"
+                ? "Գործընկերություն"
+                : language === "ru"
+                ? "Партнёрство"
+                : "Partnership"}
             </span>
 
             <h2 className="mt-5 text-4xl font-bold tracking-tight text-black md:text-6xl">
-              Our <span className="text-[#00c050]">Partners</span>
+              {language === "hy" ? (
+                <>
+                  Մեր <span className="text-[#00c050]">գործընկերները</span>
+                </>
+              ) : language === "ru" ? (
+                <>
+                  Наши <span className="text-[#00c050]">партнёры</span>
+                </>
+              ) : (
+                <>
+                  Our <span className="text-[#00c050]">Partners</span>
+                </>
+              )}
             </h2>
 
             <p className="mt-7 text-lg leading-8 text-zinc-600">
-              We partner with global IT leaders to deliver secure, cutting-edge
-              solutions for your business.
+              {language === "hy"
+                ? "Մենք համագործակցում ենք համաշխարհային IT առաջատարների հետ՝ ձեր բիզնեսի համար ապահովելով անվտանգ և ժամանակակից լուծումներ։"
+                : language === "ru"
+                ? "Мы сотрудничаем с мировыми IT-лидерами, чтобы предоставлять безопасные и передовые решения для вашего бизнеса."
+                : "We partner with global IT leaders to deliver secure, cutting-edge solutions for your business."}
             </p>
           </div>
         </BlurReveal>

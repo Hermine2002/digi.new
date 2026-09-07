@@ -62,25 +62,9 @@ export const vendors: Vendor[] = [
     scale: 1.2,
   },
 
-{
-    name: "Acra",
-    logo: "/images/vendors/acra.png",
-    category: "Security",
-    scale: 1.2,
-},
 
-{
-    name: "Ardshin",
-    logo: "/images/vendors/ardshinbank.svg",
-    category: "Security",
-    scale: 1.2,
-},
-{
-    name: "Armswissbank",
-    logo: "/images/vendors/armswissbank.png",
-    category: "Security",
-    scale: 1.2,
-},
+
+
 {
     name: "HP",
     logo: "/images/vendors/hp-Photoroom.png",
