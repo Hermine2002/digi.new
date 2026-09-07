@@ -486,85 +486,86 @@
       "Надёжное партнёрство — Умеем находить правильные решения и строить долгосрочные, надёжные отношения."
     ]
   },
-  "servicesTitle": {
-    "hy": "Ծառայություններ",
-    "en": "Services",
-    "ru": "Услуги"
-  },
-  "services": {
-    "designConsulting": {
-      "title": {
-        "hy": "Նախագծում և Խորհրդատվություն",
-        "en": "Design & Consulting",
-        "ru": "Проектирование и консалтинг"
-      },
-      "items": {
-        "hy": [
-          "Ձեր ՏՏ համակարգերի վիճակի գնահատում",
-          "Հարմարեցված տեխնիկական լուծումների մշակում",
-          "Ամբողջական տեխնիկական փաստաթղթավորում"
-        ],
-        "en": [
-          "Assessment of the current state of your IT systems",
-          "Development of tailored technical solutions",
-          "Complete technical documentation"
-        ],
-        "ru": [
-          "Оценка текущего состояния ваших ИТ-систем",
-          "Разработка адаптированных технических решений",
-          "Полная техническая документация"
-        ]
-      }
+"servicesTitle": {
+  "hy": "Ծառայություններ",
+  "en": "Services",
+  "ru": "Услуги"
+},
+
+"services": {
+  "designConsulting": {
+    "title": {
+      "hy": "Նախագծում և Խորհրդատվություն",
+      "en": "Solution Design & Consulting",
+      "ru": "Проектирование и Консалтинг"
     },
-    "implementationFinancing": {
-      "title": {
-        "hy": "Համակարգերի ներդրում և ֆինանսավորում",
-        "en": "Systems Implementation & Financing",
-        "ru": "Внедрение систем и финансирование"
-      },
-      "items": {
-        "hy": [
-          "Նախագծի իրականացում սկզբից մինչև վերջ (end-to-end) — սարքավորումների տեղադրում և գործարկում",
-          "Վճարման ճկուն պայմաններ",
-          "Միջազգային ֆինանսավորման հնարավորություններ"
-        ],
-        "en": [
-          "End-to-end project delivery — equipment installation and commissioning",
-          "Flexible payment terms",
-          "International financing options"
-        ],
-        "ru": [
-          "Реализация проекта от начала до конца (end-to-end) — монтаж и запуск оборудования",
-          "Гибкие условия оплаты",
-          "Возможности международного финансирования"
-        ]
-      }
-    },
-    "afterSales": {
-      "title": {
-        "hy": "Հետվաճառքային Սպասարկում",
-        "en": "After-Sales Support",
-        "ru": "Послепродажное обслуживание"
-      },
-      "items": {
-        "hy": [
-          "Տեխնիկական սպասարկում և պաշտոնական երաշխիք",
-          "Պահեստամասերի արագ մատակարարում",
-          "24/7 շուրջօրյա աջակցություն անհետաձգելի խնդիրների դեպքում"
-        ],
-        "en": [
-          "Technical maintenance and official warranty",
-          "Fast supply of spare parts",
-          "24/7 round-the-clock support for urgent issues"
-        ],
-        "ru": [
-          "Техническое обслуживание и официальная гарантия",
-          "Быстрая поставка запасных частей",
-          "Круглосуточная поддержка 24/7 при неотложных проблемах"
-        ]
-      }
+    "items": {
+      "hy": [
+        "Ձեր ՏՏ համակարգերի վիճակի գնահատում",
+        "Հարմարեցված տեխնիկական լուծումների մշակում",
+        "Ամբողջական տեխնիկական փաստաթղթավորում"
+      ],
+      "en": [
+        "Infrastructure Assessment",
+        "Solution Design",
+        "Technical Documentation"
+      ],
+      "ru": [
+        "Оценка IT-инфраструктуры",
+        "Проектирование решений",
+        "Техническая документация"
+      ]
     }
   },
+  "implementationFinancing": {
+    "title": {
+      "hy": "Համակարգերի ներդրում և ֆինանսավորում",
+      "en": "Project Delivery & Financing",
+      "ru": "Реализация проектов и Финансирование"
+    },
+    "items": {
+      "hy": [
+        "Նախագծի իրականացում սկզբից մինչև վերջ (end-to-end) (սարքավորումների տեղադրում և գործարկում)",
+        "Վճարման ճկուն պայմաններ",
+        "Միջազգային ֆինանսավորման հնարավորություններ"
+      ],
+      "en": [
+        "End-to-End Delivery",
+        "Flexible Financing",
+        "International Financing"
+      ],
+      "ru": [
+        "Внедрение под ключ (end-to-end)",
+        "Гибкое финансирование",
+        "Международные финансовые решения"
+      ]
+    }
+  },
+  "afterSales": {
+    "title": {
+      "hy": "Հետվաճառքային Սպասարկում",
+      "en": "Post-Sales Support",
+      "ru": "Постпродажная поддержка"
+    },
+    "items": {
+      "hy": [
+        "Տեխնիկական սպասարկում և պաշտոնական երաշխիք",
+        "Պահեստամասերի արագ մատակարարում",
+        "24/7 շուրջօրյա աջակցություն անհետաձգելի խնդիրների դեպքում"
+      ],
+      "en": [
+        "Technical & Warranty Support",
+        "Spare Parts & Logistics",
+        "24/7 Critical Support"
+      ],
+      "ru": [
+        "Техническая и гарантийная поддержка",
+        "Запасные части и логистика",
+        "Поддержка 24/7 для критически важных систем"
+      ]
+    }
+  }
+},
   "teamText3": {
     "hy": "Մեր հաճախորդներն աշխատում են այնպիսի մասնագետների հետ, որոնք լսում են, հասկանում խնդիրը և պատասխանատվություն կրում յուրաքանչյուր մարտահրավերի համար։ Նախնական խորհրդատվությունից ու նախագծումից մինչև ներդրում և հետագա տեխնիկական սպասարկում՝ մենք ապահովում ենք բարձր որակ, ինչն էլ հենց դառնում է մեր երկարաժամկետ գործընկերության հիմքը։",
     "en": "Our clients work with specialists who listen, understand the problem and take full responsibility for every challenge. From initial consultation and design to implementation and ongoing technical support, we deliver high quality that becomes the foundation of our long-term partnerships.",
